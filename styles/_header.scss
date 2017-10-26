@@ -2,11 +2,45 @@
 @import "variables";
 
 .headerText{
-  padding: 36px 0 36px 4%;
+  padding: 24px 0 10px 4%;
 
   font-family: $mont;
   font-weight: 800;
   line-height: 1.4;
 
   color: $off_white;
+}
+
+//Hero image needs adjusted
+.hero{
+  background-image: url('images/hero.jpg');
+  background-repeat: no-repeat;
+  // background-size: 190%;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+//Header text found in the hero
+.hero h1{
+  width: 75%;
+  padding: 40px 0 40px $mobile;
+
+  font-family: $lora;
+  font-size: 32px;
+  font-weight: bold;
+
+  color: $yellowish;
+}
+
+// Creates the whitebar between header and hero
+.whitebar{
+  height: 5px;
+  width: 100%;
+  background-color: white;
+}
+
+//Modifies second whitebar of hero to make smaller and shift it
+.whitebar:last-of-type{
+  width: 32%;
+  margin: 10px 0px 30px $mobile;
 }
