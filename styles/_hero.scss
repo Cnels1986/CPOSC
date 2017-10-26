@@ -1,0 +1,9 @@
+@import "variables"
+
+// Adds background image to the hero
+.hero{
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
