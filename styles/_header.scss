@@ -1,0 +1,12 @@
+// SASS file for the header
+@import "variables";
+
+.headerText{
+  padding: 36px 0 36px 4%;
+
+  font-family: $mont;
+  font-weight: 800;
+  line-height: 1.4;
+
+  color: $off_white;
+}
