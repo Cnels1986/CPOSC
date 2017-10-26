@@ -45,4 +45,38 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.headerText {
+  padding: 24px 0 10px 4%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.4;
+  color: #f5f5f5; }
+
+.hero {
+  background-image: url("images/hero.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 60px; }
+
+.hero h1 {
+  width: 75%;
+  padding: 40px 0 40px 6%;
+  font-family: "Lora", serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffae00; }
+
+.whitebar {
+  height: 5px;
+  width: 100%;
+  background-color: white; }
+
+.whitebar:last-of-type {
+  width: 32%;
+  margin: 10px 0px 30px 6%; }
+
+.container {
+  width: 320px;
+  margin: 0 auto; }
+
 /*# sourceMappingURL=style.css.map */
