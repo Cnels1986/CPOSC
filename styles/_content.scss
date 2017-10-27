@@ -10,7 +10,7 @@
 }
 
 .sectionHeader{
-  padding: 30px $mobile 10px $mobile;
+  padding: 30px $mobile 5px $mobile;
   @include text($lora, $black_text, 18px, 1.7);
   font-weight: bold;
 }
@@ -20,7 +20,7 @@
 }
 
 .sectionContent{
-  padding: 0 $mobile 20px $mobile;
+  padding: 0 $mobile 28px $mobile;
   @include text($lora, $black_text, 16px, 1.5);
 }
 
@@ -28,7 +28,28 @@
   background-color: $grayish;
 }
 
+//Adds padding between the different sessions on the sessions page
+.sessPad{
+  padding: 30px 0;
+}
+
+//Formats the last 3 events of the session page
+.sessHead{
+  padding-top: 0;
+}
+
 .goldenText{
-  padding: 18px $mobile;
+  padding: 0 $mobile;
   @include text($mont, $yellowish, 21px, 1.7);
+}
+
+.scheduleChange{
+  padding: 40px $mobile 10px $mobile;
+  @include text($mont, $black_text, 13px, 1.6);
+  font-weight: 500;
+}
+
+//Remove the padding for the content within each session/event
+.sessCon{
+  padding-bottom: 0px;
 }

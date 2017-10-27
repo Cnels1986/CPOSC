@@ -13,7 +13,7 @@
 
 //Hero image needs adjusted
 .hero{
-  background-image: url('images/hero.jpg');
+  background-image: url('hero.jpg');
   background-repeat: no-repeat;
   // background-size: 190%;
   width: 100%;
@@ -30,6 +30,11 @@
   font-weight: bold;
 
   color: $yellowish;
+}
+
+//Shrinks hero text for pages that are not the home page
+.notHome{
+  font-size: 24px;
 }
 
 // Creates the whitebar between header and hero
