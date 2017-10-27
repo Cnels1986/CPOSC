@@ -135,6 +135,9 @@ table {
   line-height: 1.6;
   font-weight: 500; }
 
+.bigHeader {
+  font-size: 24px; }
+
 .tixPrice {
   padding: 0 6% 30px 6%;
   font-family: "Lora", serif;
@@ -151,6 +154,23 @@ table {
 
 .sponsorInfo li {
   padding: 6px 0; }
+
+.aboutInfo {
+  padding: 0 6%;
+  font-family: "Lora", serif;
+  color: #101010;
+  font-size: 18px;
+  line-height: 1; }
+
+.formHeader {
+  padding: 0 6%;
+  font-family: "Lora", serif;
+  color: #101010;
+  font-size: 18px;
+  line-height: 2; }
+
+.buildingPic {
+  width: 100%; }
 
 .mapSection {
   background-color: #ffae00; }
