@@ -123,6 +123,21 @@ table {
 .sessCon {
   padding-bottom: 0px; }
 
+.tixHeader {
+  padding: 10px 6%;
+  font-family: "Montserrat", sans-serif;
+  color: #101010;
+  font-size: 21px;
+  line-height: 1.6;
+  font-weight: 500; }
+
+.tixPrice {
+  padding: 0 6% 30px 6%;
+  font-family: "Lora", serif;
+  color: #d08e01;
+  font-size: 21px;
+  line-height: 1.6; }
+
 .mapSection {
   background-color: #ffae00; }
 
