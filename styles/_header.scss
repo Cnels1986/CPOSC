@@ -21,13 +21,14 @@
 }
 
 //Header text found in the hero
-.hero h1{
+.heroText{
   width: 75%;
   padding: 40px 0 40px $mobile;
 
   font-family: $lora;
   font-size: 32px;
   font-weight: bold;
+  line-height: 1.5;
 
   color: $yellowish;
 }
