@@ -1,0 +1,37 @@
+@import "variables";
+
+// Takes in font variable, color variable, font size, and line height
+@mixin text($font, $color, $size, $height){
+  font-family: $font;
+  color: $color;
+  font-size: $size;
+  line-height: $height;
+}
+
+.mapSection{
+  background-color: $yellowish;
+}
+.mapHeader{
+  padding: 40px $mobile 10px $mobile;
+  @include text($mont, $black_text, 21px, 1.4);
+  font-weight: 500;
+}
+
+.localHeader{
+  padding: 20px $mobile 0 $mobile;
+  @include text($lora, $black_text, 18px, 1.4);
+  font-weight: bold;
+}
+
+.mapContent{
+  padding: 0 $mobile;
+  @include text($lora, $black_text, 16px, 1.5);
+}
+
+.mapContent:last-of-type{
+  padding-bottom: 30px;
+}
+
+.location{
+  font-size: 18px;
+}

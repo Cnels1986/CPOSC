@@ -1,0 +1,34 @@
+@import "variables";
+
+
+// Takes in font variable, color variable, font size, and line height
+@mixin text($font, $color, $size, $height){
+  font-family: $font;
+  color: $color;
+  font-size: $size;
+  line-height: $height;
+}
+
+.sectionHeader{
+  padding: 30px $mobile 10px $mobile;
+  @include text($lora, $black_text, 18px, 1.7);
+  font-weight: bold;
+}
+
+.makeBigger{
+  font-size: 21px;
+}
+
+.sectionContent{
+  padding: 0 $mobile 20px $mobile;
+  @include text($lora, $black_text, 16px, 1.5);
+}
+
+.bgColor{
+  background-color: $grayish;
+}
+
+.goldenText{
+  padding: 18px $mobile;
+  @include text($mont, $yellowish, 21px, 1.7);
+}
