@@ -75,6 +75,86 @@ table {
   width: 32%;
   margin: 10px 0px 30px 6%; }
 
+.sectionHeader {
+  padding: 30px 6% 10px 6%;
+  font-family: "Lora", serif;
+  color: #101010;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: bold; }
+
+.makeBigger {
+  font-size: 21px; }
+
+.sectionContent {
+  padding: 0 6% 20px 6%;
+  font-family: "Lora", serif;
+  color: #101010;
+  font-size: 16px;
+  line-height: 1.5; }
+
+.bgColor {
+  background-color: #ebebeb; }
+
+.goldenText {
+  padding: 18px 6%;
+  font-family: "Montserrat", sans-serif;
+  color: #ffae00;
+  font-size: 21px;
+  line-height: 1.7; }
+
+.mapSection {
+  background-color: #ffae00; }
+
+.mapHeader {
+  padding: 40px 6% 10px 6%;
+  font-family: "Montserrat", sans-serif;
+  color: #101010;
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 500; }
+
+.localHeader {
+  padding: 20px 6% 0 6%;
+  font-family: "Lora", serif;
+  color: #101010;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: bold; }
+
+.mapContent {
+  padding: 0 6%;
+  font-family: "Lora", serif;
+  color: #101010;
+  font-size: 16px;
+  line-height: 1.5; }
+
+.mapContent:last-of-type {
+  padding-bottom: 30px; }
+
+.location {
+  font-size: 18px; }
+
+.footerBG {
+  background-color: #313131; }
+
+.footerBold {
+  padding: 60px 6% 10px 6%;
+  font-family: "Montserrat", sans-serif;
+  color: #ebebeb;
+  font-size: 18px;
+  line-height: 1; }
+
+.footerContent {
+  padding: 10px 6% 0;
+  font-family: "Lora", serif;
+  color: #ebebeb;
+  font-size: 15px;
+  line-height: 1.6; }
+
+.footerBold:last-of-type {
+  padding-bottom: 100px; }
+
 .container {
   width: 320px;
   margin: 0 auto; }
