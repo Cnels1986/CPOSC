@@ -26,6 +26,10 @@
   @include text($lora, $black_text, 16px, 1.5);
 }
 
+.sectionContent strong{
+  font-weight: bold;
+}
+
 .bgColor{
   background-color: $grayish;
 }
@@ -69,4 +73,14 @@
   padding: 0 $mobile 30px $mobile;
 
   @include text($lora, $sick_yellow, 21px, 1.6);
+}
+
+.sponsorInfo{
+  padding: 15px $mobile;
+
+  @include text($lora, $black_text, 18px, 1.5);
+}
+
+.sponsorInfo li{
+  padding: 6px 0;
 }
