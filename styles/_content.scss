@@ -11,6 +11,7 @@
 
 .sectionHeader{
   padding: 30px $mobile 5px $mobile;
+
   @include text($lora, $black_text, 18px, 1.7);
   font-weight: bold;
 }
@@ -21,6 +22,7 @@
 
 .sectionContent{
   padding: 0 $mobile 28px $mobile;
+
   @include text($lora, $black_text, 16px, 1.5);
 }
 
@@ -40,11 +42,13 @@
 
 .goldenText{
   padding: 0 $mobile;
+
   @include text($mont, $yellowish, 21px, 1.7);
 }
 
 .scheduleChange{
   padding: 40px $mobile 10px $mobile;
+
   @include text($mont, $black_text, 13px, 1.6);
   font-weight: 500;
 }
@@ -52,4 +56,17 @@
 //Remove the padding for the content within each session/event
 .sessCon{
   padding-bottom: 0px;
+}
+
+.tixHeader{
+  padding: 10px $mobile;
+
+  @include text($mont, $black_text, 21px, 1.6);
+  font-weight: 500;
+}
+
+.tixPrice{
+  padding: 0 $mobile 30px $mobile;
+
+  @include text($lora, $sick_yellow, 21px, 1.6);
 }
