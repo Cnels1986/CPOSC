@@ -69,6 +69,10 @@
   font-weight: 500;
 }
 
+.bigHeader{
+  font-size: 24px;
+}
+
 .tixPrice{
   padding: 0 $mobile 30px $mobile;
 
@@ -83,4 +87,20 @@
 
 .sponsorInfo li{
   padding: 6px 0;
+}
+
+.aboutInfo{
+  padding: 0 $mobile;
+
+  @include text($lora, $black_text, 18px, 1);
+}
+
+.formHeader{
+  padding: 0 $mobile;
+
+  @include text($lora, $black_text, 18px, 2);
+}
+
+.buildingPic{
+  width: 100%;
 }
