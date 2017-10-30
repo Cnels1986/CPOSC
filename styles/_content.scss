@@ -152,3 +152,24 @@
 .buildingPic{
   width: 100%;
 }
+
+.aboutForm{
+  margin: 0 auto;
+  margin: 5px $mobile;
+  padding: 10px 0px;
+  width: 85%;
+  border: .5px solid black;
+}
+
+.aboutMassage{
+  height: 180px;
+  resize: none;
+}
+
+.aboutButton{
+  border: none;
+  //needs fixed, float right was giving me issues
+  margin: 30px $mobile 60px 41%;
+  display: block;
+  width: 50%;
+}
