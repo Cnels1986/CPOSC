@@ -9,6 +9,13 @@
   line-height: $height;
 }
 
+.homeSectionHeader{
+  padding: 0px $mobile 5px;
+
+  @include text($lora, $black_text, 21px, 1.7);
+  font-weight: bold;
+}
+
 .sectionHeader{
   padding: 30px $mobile 5px $mobile;
 
@@ -44,10 +51,40 @@
   padding-top: 0;
 }
 
+.goldButton{
+  width: 280px;
+  height: 60px;
+  background-color: $yellowish;
+  margin: 0 auto;
+
+  @include text($mont, $off_white, 18px, 1.7);
+  font-weight: bold;
+  text-align: center;
+}
+
+.iNeedSpace{
+  padding-top: 50px;
+}
+
+.goldButton p{
+  padding: 15px;
+}
+
 .goldenText{
-  padding: 0 $mobile;
+  padding: 40px $mobile 10px;
 
   @include text($mont, $yellowish, 21px, 1.7);
+}
+
+.logoContainer{
+  padding: 20px $mobile 0px;
+}
+
+.logoPic{
+  padding: 0 10px;
+
+  height: 90px;
+  width: auto;
 }
 
 .scheduleChange{

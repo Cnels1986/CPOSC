@@ -1,0 +1,64 @@
+@import "variables";
+
+.counter_ticket_container{
+  position: relative;
+  top: -50px;
+}
+
+.counter{
+  width: 280px;
+  height: 200px;
+  margin: 0 auto;
+
+  background-color: $yellowish;
+}
+
+.counter p{
+  padding: 8px;
+  color: $off_white;
+  text-align: center;
+  font-family: $mont;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.counter p:last-of-type{
+  font-weight: normal;
+  font-size: 21px;
+}
+
+.ticketButton{
+  width: 280px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  background-color: $sick_yellow;
+}
+
+.ticketButton p{
+  padding: 40px 20px 0px;
+  margin-bottom: 30px;
+
+  font-family: $mont;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: $off_white;
+}
+
+.buyTickets{
+  margin: 30px 15px;
+
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: $off_white;
+}
+
+.buyTickets p{
+  padding: 18px;
+  font-family: $mont;
+  font-size: 18px;
+  color: $yellowish;
+}
