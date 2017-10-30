@@ -88,6 +88,16 @@
   width: auto;
 }
 
+.yellowBar{
+  height: 2px;
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-color: $yellowish;
+}
+
 .scheduleChange{
   padding: 40px $mobile 10px $mobile;
 
@@ -101,7 +111,7 @@
 }
 
 .tixHeader{
-  padding: 10px $mobile;
+  padding: 15px $mobile;
 
   @include text($mont, $black_text, 21px, 1.6);
   font-weight: 500;
