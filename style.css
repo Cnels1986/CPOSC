@@ -151,6 +151,14 @@ table {
   height: 90px;
   width: auto; }
 
+.yellowBar {
+  height: 2px;
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffae00; }
+
 .scheduleChange {
   padding: 40px 6% 10px 6%;
   font-family: "Montserrat", sans-serif;
@@ -163,7 +171,7 @@ table {
   padding-bottom: 0px; }
 
 .tixHeader {
-  padding: 10px 6%;
+  padding: 15px 6%;
   font-family: "Montserrat", sans-serif;
   color: #101010;
   font-size: 21px;
