@@ -21,6 +21,10 @@
   @include text($lora, $grayish, 15px, 1.6);
 }
 
+.footerContent a{
+  color: $grayish;
+}
+
 .footerBold:last-of-type{
   padding-bottom: 100px;
 }
