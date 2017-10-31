@@ -138,7 +138,7 @@ table {
   .active {
     color: #ffae00; } }
 .homeSectionHeader {
-  padding: 0px 6% 5px;
+  padding: 0px 6% 5px 6%;
   font-family: "Lora", serif;
   color: #101010;
   font-size: 21px;
@@ -167,7 +167,8 @@ table {
   font-weight: bold; }
 
 .bgColor {
-  background-color: #ebebeb; }
+  background-color: #ebebeb;
+  width: 100%; }
 
 .sessPad {
   padding: 30px 0; }
@@ -290,6 +291,27 @@ table {
   display: block;
   width: 50%; }
 
+.homeButton {
+  position: relative;
+  top: -50px; }
+
+@media only screen and (min-width: 760px) {
+  .browserContent h3, .browserContent p {
+    padding-left: 35%;
+    width: 52%; }
+
+  .homeButton {
+    position: fixed;
+    padding-left: 6%;
+    bottom: 0;
+    left: 0;
+    top: 0; }
+
+  .inline {
+    display: inline-block; }
+
+  .logoPic {
+    padding-right: 40px; } }
 .mapSection {
   background-color: #ffae00; }
 
@@ -486,6 +508,19 @@ table {
   font-size: 18px;
   color: #ffae00; }
 
+@media only screen and (min-width: 760px) {
+  .counter {
+    height: 140px;
+    width: 58%; }
+
+  .counter p {
+    padding: 5% 50px 10px 50%;
+    font-size: 24px;
+    font-weight: bold; }
+
+  .counter p:last-of-type {
+    padding-top: 0px;
+    font-weight: normal; } }
 .container {
   min-width: 320px;
   width: 100%; }

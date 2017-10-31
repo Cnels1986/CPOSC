@@ -10,7 +10,7 @@
 }
 
 .homeSectionHeader{
-  padding: 0px $mobile 5px;
+  padding: 0px $mobile 5px $mobile;
 
   @include text($lora, $black_text, 21px, 1.7);
   font-weight: bold;
@@ -39,6 +39,7 @@
 
 .bgColor{
   background-color: $grayish;
+  width: 100%;
 }
 
 //Adds padding between the different sessions on the sessions page
@@ -172,4 +173,33 @@
   margin: 30px $mobile 60px 41%;
   display: block;
   width: 50%;
+}
+
+.homeButton{
+  position: relative;
+  top: -50px;
+}
+
+@media only screen and (min-width: 760px){
+
+  .browserContent h3, .browserContent p{
+    padding-left: 35%;
+    width: 52%;
+  }
+
+  .homeButton{
+    position: fixed;
+    padding-left: $mobile;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .inline{
+    display: inline-block;
+  }
+
+  .logoPic{
+    padding-right: 40px;
+  }
 }

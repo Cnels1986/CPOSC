@@ -62,3 +62,21 @@
   font-size: 18px;
   color: $yellowish;
 }
+
+@media only screen and (min-width: 760px){
+  .counter{
+    height: 140px;
+    width: 58%;
+  }
+
+  .counter p{
+    padding: 5% 50px 10px 50%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .counter p:last-of-type{
+    padding-top: 0px;
+    font-weight: normal;
+  }
+}
