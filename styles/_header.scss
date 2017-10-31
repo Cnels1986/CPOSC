@@ -55,6 +55,17 @@
 
 //Modifies second whitebar of hero to make smaller and shift it
 .whitebar:last-of-type{
-  width: 32%;
+  width: 110px;
   margin: 10px 0px 30px $mobile;
+}
+
+@media only screen and (min-width: 760px){
+  .whitebar:last-of-type{
+    width: 135px;
+    height: 8px;
+
+    .heroText{
+      font-size: 72px;
+    }
+  }
 }

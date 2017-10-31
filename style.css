@@ -83,9 +83,15 @@ table {
   background-color: white; }
 
 .whitebar:last-of-type {
-  width: 32%;
+  width: 110px;
   margin: 10px 0px 30px 6%; }
 
+@media only screen and (min-width: 760px) {
+  .whitebar:last-of-type {
+    width: 135px;
+    height: 8px; }
+    .whitebar:last-of-type .heroText {
+      font-size: 72px; } }
 .homeSectionHeader {
   padding: 0px 6% 5px;
   font-family: "Lora", serif;
