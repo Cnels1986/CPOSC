@@ -1,95 +1,103 @@
 @import "variables";
 
-body{
-	margin:0;
-	width:100%;
-  // background:$yellowish;
-}
-header{
-	width:100%;
-	// background: $yellowish;
-}
-.hamburger{
-  background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  line-height:45px;
-  padding:36px $mobile;
-  color: $off_white;
-  border:0;
-  font-size:4em;
-  // font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-.cross{
-  background:none;
-  position:absolute;
-  top:0px;
-  right:0;
-  padding:36px $mobile;
-  color: $off_white;
-  border:0;
-  font-size:9em;
-  // line-height:65px;
-  // font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-.menu{
-  z-index:1000000;
-  font-size:21px;
-  width:100%;
-  background-color:$yellowish;
-  position:absolute;
-  text-align:left;
-  font-family: $mont;
-}
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  list-style-image: none;
-}
-.menu li {
-  display: block;
-  padding:15px 0px 15px 30px;
-  border-bottom:$black_text 1px solid;
-}
-.menu li:hover{
-  display: block;
-  background: $sick_yellow;
-  padding-left:30px;
-  border-bottom:$black_text 1px solid;
-}
-.menu ul li a {
-  text-decoration:none;
-  margin: 0px;
-  color: $black_text;
-}
-.menu ul li a:hover {
-  color: $black_text;
-  text-decoration:none;
-}
-.menu a{
-  text-decoration:none;
-  color:#666;
-}
-.menu a:hover{
-  text-decoration:none;
-  color:#666;
+@media only screen and (min-width:761px){
+  .hamburger, .cross{
+    display: none;
+  }
 }
 
-header{
-  display:inline-block;
-  font-size:12px;
-}
-span{
-  padding-left:20px;
-}
-a{
-  color:$black_text;
+@media only screen and (max-width: 760px){
+	body{
+		margin:0;
+		width:100%;
+	  // background:$yellowish;
+	}
+	header{
+		width:100%;
+		// background: $yellowish;
+	}
+	.hamburger{
+	  background:none;
+	  position:absolute;
+	  top:0;
+	  right:0;
+	  line-height:45px;
+	  padding:36px $mobile 0px;
+	  color: $off_white;
+	  border:0;
+	  font-size:4em;
+	  // font-weight:bold;
+	  cursor:pointer;
+	  outline:none;
+	  z-index:10000000000000;
+	}
+	.cross{
+	  background:none;
+	  position:absolute;
+	  top:0px;
+	  right:0;
+	  padding:36px $mobile 0px;
+	  color: $off_white;
+	  border:0;
+	  font-size:9em;
+	  // line-height:65px;
+	  // font-weight:bold;
+	  cursor:pointer;
+	  outline:none;
+	  z-index:10000000000000;
+	}
+	.menu{
+	  z-index:1000000;
+	  font-size:21px;
+	  width:100%;
+	  background-color:$yellowish;
+	  position:absolute;
+	  text-align:left;
+	  font-family: $mont;
+	}
+	.menu ul {
+	  margin: 0;
+	  padding: 0;
+	  list-style-type: none;
+	  list-style-image: none;
+	}
+	.menu li {
+	  display: block;
+	  padding:15px 0px 15px 30px;
+	  border-bottom:$black_text 1px solid;
+	}
+	.menu li:hover{
+	  display: block;
+	  background: $sick_yellow;
+	  padding-left:30px;
+	  border-bottom:$black_text 1px solid;
+	}
+	.menu ul li a {
+	  text-decoration:none;
+	  margin: 0px;
+	  color: $black_text;
+	}
+	.menu ul li a:hover {
+	  color: $black_text;
+	  text-decoration:none;
+	}
+	.menu a{
+	  text-decoration:none;
+	  color:#666;
+	}
+	.menu a:hover{
+	  text-decoration:none;
+	  color:#666;
+	}
+
+	header{
+	  display:inline-block;
+	  font-size:12px;
+	}
+	span{
+	  padding-left:20px;
+	}
+	a{
+	  color:$black_text;
+	}
 }

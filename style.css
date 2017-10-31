@@ -52,7 +52,7 @@ table {
   width: 230px;
   display: inline-block;
   float: left;
-  padding: 36px 6%;
+  padding: 36px 6% 0px;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   line-height: 1.4;
@@ -64,6 +64,13 @@ table {
   background-repeat: no-repeat;
   width: 100%;
   padding-bottom: 60px; }
+
+.hero a {
+  text-decoration: none;
+  transition: color .7s; }
+
+.hero a:hover {
+  color: #ffae00; }
 
 .heroText {
   width: 75%;
@@ -80,7 +87,8 @@ table {
 .whitebar {
   height: 5px;
   width: 100%;
-  background-color: white; }
+  background-color: white;
+  margin: 20px 0px; }
 
 .whitebar:last-of-type {
   width: 110px;
@@ -90,8 +98,45 @@ table {
   .whitebar:last-of-type {
     width: 135px;
     height: 8px; }
-    .whitebar:last-of-type .heroText {
-      font-size: 72px; } }
+
+  .headerText {
+    font-size: 18px; }
+
+  .heroText {
+    width: 58%;
+    padding-top: 100px;
+    font-size: 72px; }
+
+  .notHome {
+    font-size: 36px;
+    width: 84%; }
+
+  .navBar {
+    height: 100%;
+    display: inline-block !important;
+    float: right; }
+
+  .navList {
+    display: flex; }
+
+  .navList li {
+    display: flex;
+    flex-direction: column-reverse; }
+
+  .navLink {
+    position: relative;
+    top: -90px;
+    left: -40px;
+    padding: 40px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    color: #f5f5f5; }
+
+  .active {
+    color: #ffae00; } }
 .homeSectionHeader {
   padding: 0px 6% 5px;
   font-family: "Lora", serif;
@@ -300,93 +345,96 @@ table {
 .footerBold:last-of-type {
   padding-bottom: 100px; }
 
-body {
-  margin: 0;
-  width: 100%; }
+@media only screen and (min-width: 761px) {
+  .hamburger, .cross {
+    display: none; } }
+@media only screen and (max-width: 760px) {
+  body {
+    margin: 0;
+    width: 100%; }
 
-header {
-  width: 100%; }
+  header {
+    width: 100%; }
 
-.hamburger {
-  background: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: 45px;
-  padding: 36px 6%;
-  color: #f5f5f5;
-  border: 0;
-  font-size: 4em;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000; }
+  .hamburger {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    padding: 36px 6% 0px;
+    color: #f5f5f5;
+    border: 0;
+    font-size: 4em;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000; }
 
-.cross {
-  background: none;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  padding: 36px 6%;
-  color: #f5f5f5;
-  border: 0;
-  font-size: 9em;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000; }
+  .cross {
+    background: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 36px 6% 0px;
+    color: #f5f5f5;
+    border: 0;
+    font-size: 9em;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000; }
 
-.menu {
-  z-index: 1000000;
-  font-size: 21px;
-  width: 100%;
-  background-color: #ffae00;
-  position: absolute;
-  text-align: left;
-  font-family: "Montserrat", sans-serif; }
+  .menu {
+    z-index: 1000000;
+    font-size: 21px;
+    width: 100%;
+    background-color: #ffae00;
+    position: absolute;
+    text-align: left;
+    font-family: "Montserrat", sans-serif; }
 
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  list-style-image: none; }
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none; }
 
-.menu li {
-  display: block;
-  padding: 15px 0px 15px 30px;
-  border-bottom: #101010 1px solid; }
+  .menu li {
+    display: block;
+    padding: 15px 0px 15px 30px;
+    border-bottom: #101010 1px solid; }
 
-.menu li:hover {
-  display: block;
-  background: #d08e01;
-  padding-left: 30px;
-  border-bottom: #101010 1px solid; }
+  .menu li:hover {
+    display: block;
+    background: #d08e01;
+    padding-left: 30px;
+    border-bottom: #101010 1px solid; }
 
-.menu ul li a {
-  text-decoration: none;
-  margin: 0px;
-  color: #101010; }
+  .menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #101010; }
 
-.menu ul li a:hover {
-  color: #101010;
-  text-decoration: none; }
+  .menu ul li a:hover {
+    color: #101010;
+    text-decoration: none; }
 
-.menu a {
-  text-decoration: none;
-  color: #666; }
+  .menu a {
+    text-decoration: none;
+    color: #666; }
 
-.menu a:hover {
-  text-decoration: none;
-  color: #666; }
+  .menu a:hover {
+    text-decoration: none;
+    color: #666; }
 
-header {
-  display: inline-block;
-  font-size: 12px; }
+  header {
+    display: inline-block;
+    font-size: 12px; }
 
-span {
-  padding-left: 20px; }
+  span {
+    padding-left: 20px; }
 
-a {
-  color: #101010; }
-
+  a {
+    color: #101010; } }
 .counter_ticket_container {
   position: relative;
   top: -50px; }
