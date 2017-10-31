@@ -8,7 +8,18 @@
 @import "buttons";
 
 .container{
-  width: 320px;
-  // width: 100%;
-  margin: 0 auto;
+  // min-width: 320px; //Mobile's minimum width
+  // max-width: 1600px; //Browsers maximum width
+
+  //Change is mobile should be fixed
+  min-width: 320px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 760px){
+  .container{
+    min-width: 760px;
+    max-width: 1600px;
+    width: 100%;
+  }
 }

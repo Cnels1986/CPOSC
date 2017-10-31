@@ -45,11 +45,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.headerNav {
+  height: 100px; }
+
 .headerText {
-  padding: 24px 0 10px 4%;
+  width: 230px;
+  display: inline-block;
+  float: left;
+  padding: 36px 6%;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   line-height: 1.4;
+  font-size: 14px;
   color: #f5f5f5; }
 
 .hero {
@@ -287,6 +294,93 @@ table {
 .footerBold:last-of-type {
   padding-bottom: 100px; }
 
+body {
+  margin: 0;
+  width: 100%; }
+
+header {
+  width: 100%; }
+
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 36px 6%;
+  color: #f5f5f5;
+  border: 0;
+  font-size: 4em;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+.cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 36px 6%;
+  color: #f5f5f5;
+  border: 0;
+  font-size: 9em;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+.menu {
+  z-index: 1000000;
+  font-size: 21px;
+  width: 100%;
+  background-color: #ffae00;
+  position: absolute;
+  text-align: left;
+  font-family: "Montserrat", sans-serif; }
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none; }
+
+.menu li {
+  display: block;
+  padding: 15px 0px 15px 30px;
+  border-bottom: #101010 1px solid; }
+
+.menu li:hover {
+  display: block;
+  background: #d08e01;
+  padding-left: 30px;
+  border-bottom: #101010 1px solid; }
+
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #101010; }
+
+.menu ul li a:hover {
+  color: #101010;
+  text-decoration: none; }
+
+.menu a {
+  text-decoration: none;
+  color: #666; }
+
+.menu a:hover {
+  text-decoration: none;
+  color: #666; }
+
+header {
+  display: inline-block;
+  font-size: 12px; }
+
+span {
+  padding-left: 20px; }
+
+a {
+  color: #101010; }
+
 .counter_ticket_container {
   position: relative;
   top: -50px; }
@@ -339,7 +433,13 @@ table {
   color: #ffae00; }
 
 .container {
-  width: 320px;
-  margin: 0 auto; }
+  min-width: 320px;
+  width: 100%; }
+
+@media only screen and (min-width: 760px) {
+  .container {
+    min-width: 760px;
+    max-width: 1600px;
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
