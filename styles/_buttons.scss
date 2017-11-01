@@ -48,19 +48,52 @@
 }
 
 .buyTickets{
-  margin: 30px 15px;
-
+  display: block;
+  margin: 0 auto;
   width: 250px;
   height: 50px;
-  margin: 0 auto;
   background-color: $off_white;
+  border: none;
 }
 
-.buyTickets p{
-  padding: 18px;
+.buyTickets a{
+  margin: 0 auto;
   font-family: $mont;
   font-size: 18px;
+  font-weight: bold;
   color: $yellowish;
+  text-decoration: none;
+}
+
+.goldButton{
+  width: 280px;
+  height: 60px;
+  background-color: $yellowish;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.goldButton a{
+  padding: 15px;
+  text-decoration: none;
+  @include text($mont, $off_white, 18px, 1.7);
+  font-weight: bold;
+  text-align: center;
+}
+
+.aboutButton{
+  border: none;
+  //needs fixed, float right was giving me issues
+  margin: 30px $mobile 60px 41%;
+  display: block;
+  width: 50%;
+}
+
+.homeButton{
+  position: relative;
+  top: -50px;
 }
 
 @media only screen and (min-width: 760px){
@@ -78,5 +111,24 @@
   .counter p:last-of-type{
     padding-top: 0px;
     font-weight: normal;
+  }
+
+  .ticketButton{
+    width: 300px;
+  }
+
+  .homeButton{
+    position: fixed;
+    padding-left: $mobile;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .goldButton{
+    float: right;
+    margin: 0;
+    vertical-align: top;
+    margin: 50px $mobile;
   }
 }
