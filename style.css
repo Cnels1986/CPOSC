@@ -176,24 +176,8 @@ table {
 .sessHead {
   padding-top: 0; }
 
-.goldButton {
-  width: 280px;
-  height: 60px;
-  background-color: #ffae00;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  font-family: "Montserrat", sans-serif;
-  color: #f5f5f5;
-  font-size: 18px;
-  line-height: 1.7;
-  font-weight: bold;
-  text-align: center; }
-
 .iNeedSpace {
   padding-top: 50px; }
-
-.goldButton p {
-  padding: 15px; }
 
 .goldenText {
   padding: 10px 6% 5px;
@@ -285,33 +269,23 @@ table {
   height: 180px;
   resize: none; }
 
-.aboutButton {
-  border: none;
-  margin: 30px 6% 60px 41%;
-  display: block;
-  width: 50%; }
-
-.homeButton {
-  position: relative;
-  top: -50px; }
-
 @media only screen and (min-width: 760px) {
   .browserContent h3, .browserContent p {
     padding-left: 35%;
     width: 52%; }
 
-  .homeButton {
-    position: fixed;
-    padding-left: 6%;
-    bottom: 0;
-    left: 0;
-    top: 0; }
-
   .inline {
     display: inline-block; }
 
   .logoPic {
-    padding-right: 40px; } }
+    padding-right: 40px; }
+
+  .conSponsor h3, .conSponsor p {
+    padding-left: 0; }
+
+  .conSponsor {
+    width: 45%;
+    padding-left: 6%; } }
 .mapSection {
   background-color: #ffae00; }
 
@@ -496,17 +470,49 @@ table {
   color: #f5f5f5; }
 
 .buyTickets {
-  margin: 30px 15px;
+  display: block;
+  margin: 0 auto;
   width: 250px;
   height: 50px;
-  margin: 0 auto;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  border: none; }
 
-.buyTickets p {
-  padding: 18px;
+.buyTickets a {
+  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  color: #ffae00; }
+  font-weight: bold;
+  color: #ffae00;
+  text-decoration: none; }
+
+.goldButton {
+  width: 280px;
+  height: 60px;
+  background-color: #ffae00;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+  border: none; }
+
+.goldButton a {
+  padding: 15px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #f5f5f5;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: bold;
+  text-align: center; }
+
+.aboutButton {
+  border: none;
+  margin: 30px 6% 60px 41%;
+  display: block;
+  width: 50%; }
+
+.homeButton {
+  position: relative;
+  top: -50px; }
 
 @media only screen and (min-width: 760px) {
   .counter {
@@ -520,7 +526,23 @@ table {
 
   .counter p:last-of-type {
     padding-top: 0px;
-    font-weight: normal; } }
+    font-weight: normal; }
+
+  .ticketButton {
+    width: 300px; }
+
+  .homeButton {
+    position: fixed;
+    padding-left: 6%;
+    bottom: 0;
+    left: 0;
+    top: 0; }
+
+  .goldButton {
+    float: right;
+    margin: 0;
+    vertical-align: top;
+    margin: 50px 6%; } }
 .container {
   min-width: 320px;
   width: 100%; }
