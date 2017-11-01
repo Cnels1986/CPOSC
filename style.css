@@ -270,8 +270,8 @@ table {
   resize: none; }
 
 @media only screen and (min-width: 760px) {
-  .browserContent h3, .browserContent p {
-    padding-left: 35%;
+  .browserContent h3, .browserContent p, .browserContent h5 {
+    float: right;
     width: 52%; }
 
   .inline {
@@ -285,7 +285,11 @@ table {
 
   .conSponsor {
     width: 45%;
-    padding-left: 6%; } }
+    padding-left: 6%; }
+
+  .browserContent {
+    overflow: hidden;
+    padding-bottom: 60px; } }
 .mapSection {
   background-color: #ffae00; }
 
