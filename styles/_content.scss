@@ -151,9 +151,18 @@
   resize: none;
 }
 
+.mobileHide{
+  display:none;
+}
+
+.sponsorInfo li{
+  list-style-type: disc;
+}
+
+
 @media only screen and (min-width: 760px){
 
-  .browserContent h3, .browserContent p, .browserContent h5{
+  .browserContent h3, .browserContent p, .browserContent h5, .browserContent li{
     float: right;
     width: 52%;
   }
@@ -210,5 +219,38 @@
 
   .sponsorPDF{
     display: none;
+  }
+
+  .sponsorNav{
+    text-decoration: none;
+    padding: 30px $mobile 10px $mobile;
+
+    @include text($lora, $black_text, 18px, 1.7);
+    font-weight: bold;
+  }
+
+  .sponsorTable{
+    display: block;
+    padding: 75px 0 20px 0;
+  }
+
+  .sponsorTable h3{
+    @include text($mont, $black_text, 24px, 1.6);
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-left: $mobile;
+  }
+
+  .sponsorTable td{
+    @include text($lora, $black_text, 16px, 1.5);
+    padding-bottom: 10px;
+    padding-left: $mobile;
+  }
+
+  .additionalSponsorInfo{
+    width: 35%;
+    padding: 0 0 80px $mobile;
+    @include text($lora, $black_text, 14px, 1);
+    font-style: italic;
   }
 }
