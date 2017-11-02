@@ -30,13 +30,42 @@
 }
 
 @media only screen and (min-width: 760px) {
-.footerBold{
+
+    .footerBG{
+      width: 100%;
+      background-color: $footerBG;
+    }
+.footerFirst{
+display: inline-block;
+width: 40%;
+}
+.footerSecond{
+display: inline-block;
+float: right;
+width: 36%;
 
 }
-.footerContent{
+  .footerBold{
+     padding: 0;
+     vertical-align: top;
+   }
 
-}
-.footerBG{
-  
-}
+  .footerBold:last-of-type{
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .footerBrowser{
+    padding-top: 100px;
+  }
+  .footerContent{
+    padding-left: 0;
+  }
+  .footerFirst{
+    padding-left: $mobile;
+  }
+  .footerBb
+  {
+    padding-bottom: 130px;
+  }
 }
