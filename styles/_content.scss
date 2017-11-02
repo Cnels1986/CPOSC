@@ -162,6 +162,10 @@
     display: inline-block;
   }
 
+  .block{
+    display: block;
+  }
+
   .logoPic{
     padding-right: 40px;
   }
@@ -179,5 +183,24 @@
     overflow: hidden;
     padding-bottom: 60px;
 
+  }
+
+  .ticketOverview{
+    font-size: 21px;
+    width: 60%;
+  }
+
+  .ticketContent{
+    font-family: $mont;
+    width: 66%;
+    font-size: 21px;
+  }
+
+  .ticketContent p{
+    font-weight: 500;
+  }
+
+  .tixContainer{
+    margin-bottom: 50px;
   }
 }
