@@ -69,6 +69,30 @@
   margin: 10px 0px 30px $mobile;
 }
 
+.counterNumbers{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.counterBlock{
+  background-color: $off_white;
+  width: 75px;
+  height: 75px;
+
+  margin: 10px 5px;
+  display: inline-block;
+
+  font-family: $mont;
+  color: #131313;
+  font-size: 46px;
+}
+
+.counterBlock h2{
+  text-align: center;
+  padding-top: 23%;
+}
+
+
 @media only screen and (min-width: 760px){
   .whitebar:last-of-type{
     width: 135px;
@@ -122,4 +146,24 @@
   .active{
     color: $yellowish;
   }
+
+  .counterBlock{
+    height: 90px;
+    width: 90px;
+    font-size: 56px;
+    margin-top: 25px;
+  }
+
+  .counterNumbers{
+    margin-left: 20px;
+    width: 45%;
+    float: left;
+  }
+/*
+  .counterText{
+    display: inline;
+    width: 50%;
+    // vertical-align: top;
+  }
+*/
 }

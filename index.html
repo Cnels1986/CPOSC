@@ -7,7 +7,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,500,700,800" rel="stylesheet">
     <script type="text/javascript" src="jquery-3.2.1.js"></script>
-    <script src="file.js"></script>
+
+<!--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zLxrYkjNRcf7Im3kWe_oX2psyt29hgo&callback=initMap"
+            type="text/javascript"></script>
+-->
   </head>
 
   <!-- Container will control overall width of site -->
@@ -48,12 +52,20 @@
     <div class="whitebar"></div>
     </div>
 
-
-    <!-- Burger bar and navigation need added at future time -->
-
     <div class="counter_ticket_container">
-      <!-- counter, javascript needed -->
+
       <div class="counter">
+        <div class="counterNumbers">
+          <div class="counterBlock">
+            <h2  id="hundreds"></h2>
+          </div>
+          <div class="counterBlock">
+            <h2  id="tens"></h2>
+          </div>
+          <div class="counterBlock">
+            <h2 id="ones"></h2>
+          </div>
+        </div>
         <p>DAYS UNTIL CPOSC 2018</p>
         <p>NOVEMBER 1, 2018</p>
       </div>
@@ -146,26 +158,28 @@
 
     <section class="mapSection">
       <!-- needs to be all caps -->
-      <h4 class="mapHeader">CONFRENCE LOCATIONS</h4>
+      <div class="mapText">
+        <h4 class="mapHeader">CONFRENCE LOCATIONS</h4>
 
-      <h5 class="localHeader">The Ware Center</h5>
-      <p class="mapContent location">at Millersville University</p>
-      <p class="mapContent">42 N. Prince Street,</p>
-      <p class="mapContent">Lancaster, PA 17603</p>
+        <h5 class="localHeader">The Ware Center</h5>
+        <p class="mapContent location">at Millersville University</p>
+        <p class="mapContent">42 N. Prince Street,</p>
+        <p class="mapContent">Lancaster, PA 17603</p>
 
-      <h5 class="localHeader">Prince St. Parking Garage</h5>
-      <p class="mapContent">111 N. Prince Street,</p>
-      <p class="mapContent">Lancaster, PA 17603</p>
+        <h5 class="localHeader">Prince St. Parking Garage</h5>
+        <p class="mapContent">111 N. Prince Street,</p>
+        <p class="mapContent">Lancaster, PA 17603</p>
 
-      <h5 class="localHeader">Tellus360</h5>
-      <p class="mapContent">24 E. King Street,</p>
-      <p class="mapContent">Lancaster, PA 17602</p>
+        <h5 class="localHeader">Tellus360</h5>
+        <p class="mapContent">24 E. King Street,</p>
+        <p class="mapContent">Lancaster, PA 17602</p>
+      </div>
 
-      <!-- div will contain the google maps api -->
-      <div></div>
+
+      <div class="mapContainer" id="map"></div>
     </section>
 
-    <footer class="footerBG">
+    <footer class="footerBG block">
       <div class="footerFirst">
       <h3 class="footerBold footerBrowser">Code of Conduct</h3>
       <p class="footerContent footerBb">
@@ -178,5 +192,7 @@
       <h3 class="footerBold footerBb">#CPOSC2017</h3>
     </div>
     </footer>
+
+    <script src="file.js"></script>
   </body>
 </html>
