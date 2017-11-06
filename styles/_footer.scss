@@ -31,20 +31,21 @@
 
 @media only screen and (min-width: 760px) {
 
-    .footerBG{
-      width: 100%;
-      background-color: $footerBG;
-    }
-.footerFirst{
-display: inline-block;
-width: 40%;
-}
-.footerSecond{
-display: inline-block;
-float: right;
-width: 36%;
+  .footerBG{
+    width: 100%;
+    background-color: $footerBG;
+  }
 
-}
+  .footerFirst{
+    display: inline-block;
+    width: 40%;
+  }
+  .footerSecond{
+    display: inline-block;
+    float: right;
+    width: 36%;
+  }
+
   .footerBold{
      padding: 0;
      vertical-align: top;
@@ -58,12 +59,15 @@ width: 36%;
   .footerBrowser{
     padding-top: 100px;
   }
+
   .footerContent{
     padding-left: 0;
   }
+  
   .footerFirst{
     padding-left: $mobile;
   }
+
   .footerBb
   {
     padding-bottom: 130px;

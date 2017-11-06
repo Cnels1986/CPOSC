@@ -9,10 +9,15 @@
 }
 
 .mapSection{
+  height: 570px;
+}
+
+.mapText{
   background-color: $yellowish;
+  height: 100%;
 }
 .mapHeader{
-  padding: 40px $mobile 10px $mobile;
+  padding: 75px $mobile 10px $mobile;
   @include text($mont, $black_text, 21px, 1.4);
   font-weight: 500;
 }
@@ -34,4 +39,26 @@
 
 .location{
   font-size: 18px;
+}
+
+.mapContainer{
+  height: 370px;
+  width: 100%;
+  background-color: grey;
+  display: block;
+}
+
+@media only screen and (min-width: 760px){
+  .mapContainer{
+    width: 60%;
+    display: inline;
+    float: right;
+    height: 100%;
+  }
+
+  .mapText{
+    width: 40%;
+    display: inline-block;
+    float: left;
+  }
 }
