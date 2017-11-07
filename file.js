@@ -18,7 +18,7 @@ $( ".hamburger" ).show();
 
 });
 
-/*
+
 var address = '42 N Prince St, Lancaster, PA 17603';
 
 var map = new google.maps.Map(document.getElementById('map'), {
@@ -40,7 +40,7 @@ function(results, status) {
       map.setCenter(results[0].geometry.location);
       map.setZoom(16);
    }
-});*/
+});
 
 
 var nextCPOSC = new Date(2018, 10, 1).getTime(); //sets date to Nov 1, 2018
