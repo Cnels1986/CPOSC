@@ -78,7 +78,7 @@
   width: 88%;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   background-color: $yellowish;
 }
@@ -161,6 +161,37 @@
 
 .makeBold{
   font-weight: bold;
+}
+
+.ticketForm{
+  height: 50px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 0px;
+  margin-left: $mobile;
+
+  @include text($mont, $black_text, 24px, 1);
+  padding: 10px 25px;
+}
+
+.totalBox{
+  height: 55px;
+  width: 170px;
+  border: 1px solid black;
+  float: right;
+  margin-right: $mobile;
+  display: inline;
+  margin-bottom: 50px;
+  // margin: 30px $mobile 50px 0;
+}
+
+.totalHeader{
+  display: inline;
+  width: 50%;
+  padding-left: $mobile;
+  padding-top: 20px;
+  @include text($mont, $black_text, 21px, 1.6);
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 760px){
