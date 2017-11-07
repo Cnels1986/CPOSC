@@ -18,30 +18,49 @@ $( ".hamburger" ).show();
 
 });
 
-
 var address = '42 N Prince St, Lancaster, PA 17603';
+mapTest();
 
-var map = new google.maps.Map(document.getElementById('map'), {
-    mapTypeId: google.maps.MapTypeId.TERRAIN,
-    zoom: 6
-});
+function address1(){
+  address = '42 N Prince St, Lancaster, PA 17603';
+  mapTest();
+}
+function address2(){
+  address = '111 N. Prince Street, Lancaster, PA 17603';
+  mapTest();
+}
+function address3(){
+  address = '24 E. King Street, Lancaster, PA 17602';
+  mapTest();
+}
 
-var geocoder = new google.maps.Geocoder();
 
-geocoder.geocode({
-   'address': address
-},
-function(results, status) {
-   if(status == google.maps.GeocoderStatus.OK) {
-      new google.maps.Marker({
-         position: results[0].geometry.location,
-         map: map
-      });
-      map.setCenter(results[0].geometry.location);
-      map.setZoom(16);
-   }
-});
 
+
+
+
+function mapTest(){
+  var map = new google.maps.Map(document.getElementById('map'), {
+      mapTypeId: google.maps.MapTypeId.TERRAIN,
+      zoom: 6
+  });
+
+  var geocoder = new google.maps.Geocoder();
+
+  geocoder.geocode({
+     'address': address
+  },
+  function(results, status) {
+     if(status == google.maps.GeocoderStatus.OK) {
+        new google.maps.Marker({
+           position: results[0].geometry.location,
+           map: map
+        });
+        map.setCenter(results[0].geometry.location);
+        map.setZoom(16);
+     }
+  });
+}
 
 var nextCPOSC = new Date(2018, 10, 1).getTime(); //sets date to Nov 1, 2018
 var date = new Date().getTime(); //sets date to today's date
