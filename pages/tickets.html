@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,500,700,800" rel="stylesheet">
     <script type="text/javascript" src="../jquery-3.2.1.js"></script>
-    <script src="../file.js"></script>
   </head>
 
   <!-- Container will control overall width of site -->
@@ -154,41 +153,50 @@
       <div class="yellowBar"></div>
     </div>
 
+
+
     <section class = "block purchaseTick">
       <!-- text needs dropped down -->
       <div class="block">
         <h4 class="totalHeader">Total:</h4>
 
-        <div class="totalBox"></div>
+        <div class="totalBox" id="totals"></div>
       </div>
       <!-- fix button -->
       <div class="block">
-        <button class="goldButton tixButton ">
+        <button onclick="calcTotal()" class="goldButton tixButton">
           <a href="">Purchase</a>
         </button>
       </div>
     </section>
 
 
-    <section class="mapSection" class="block">
-      <!-- needs to be all caps -->
-      <h4 class="mapHeader">CONFRENCE LOCATIONS</h4>
+    <section class="mapSection block">
+      <div class="mapText">
+        <h4 class="mapHeader">CONFRENCE LOCATIONS</h4>
 
-      <h5 class="localHeader">The Ware Center</h5>
-      <p class="mapContent location">at Millersville University</p>
-      <p class="mapContent">42 N. Prince Street,</p>
-      <p class="mapContent">Lancaster, PA 17603</p>
+        <div>
+          <a href="#" onclink="address1()" class="localHeader">The Ware Center</a>
+          <p class="mapContent location">at Millersville University</p>
+          <p class="mapContent">42 N. Prince Street,</p>
+          <p class="mapContent">Lancaster, PA 17603</p>
+        </div>
 
-      <h5 class="localHeader">Prince St. Parking Garage</h5>
-      <p class="mapContent">111 N. Prince Street,</p>
-      <p class="mapContent">Lancaster, PA 17603</p>
+        <div>
+          <a href="#" onclick="address2()") class="localHeader">Prince St. Parking Garage</a>
+          <p class="mapContent">111 N. Prince Street,</p>
+          <p class="mapContent">Lancaster, PA 17603</p>
+        </div>
 
-      <h5 class="localHeader">Tellus360</h5>
-      <p class="mapContent">24 E. King Street,</p>
-      <p class="mapContent">Lancaster, PA 17602</p>
+        <div>
+          <a href="#" onclick="address3()" class="localHeader">Tellus360</a>
+          <p class="mapContent">24 E. King Street,</p>
+          <p class="mapContent">Lancaster, PA 17602</p>
+        </div>
+      </div>
 
-      <!-- div will contain the google maps api -->
-      <div></div>
+
+      <div class="mapContainer" id="map"></div>
     </section>
 
     <footer class="footerBG">
@@ -204,5 +212,9 @@
       <h3 class="footerBold footerBb">#CPOSC2017</h3>
     </div>
     </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zLxrYkjNRcf7Im3kWe_oX2psyt29hgo&callback=initMap"
+            type="text/javascript"></script>
+    <script src="../file.js"></script>
 </body>
 </html>

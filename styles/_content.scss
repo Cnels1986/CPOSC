@@ -60,6 +60,7 @@
   padding: 10px $mobile 5px;
 
   @include text($mont, $yellowish, 21px, 1.7);
+  text-decoration: none;
 }
 
 .logoContainer{
@@ -259,6 +260,7 @@
 
   .purchaseTick{
     height: 300px;
+    color: $black_text;
   }
 
   .sponsorPDF{
@@ -267,10 +269,14 @@
 
   .sponsorNav{
     text-decoration: none;
-    padding: 30px $mobile 10px $mobile;
+    // padding: 30px $mobile 10px $mobile;
 
     @include text($lora, $black_text, 18px, 1.7);
     font-weight: bold;
+  }
+
+  .buyTix li{
+    padding: 10px $mobile;
   }
 
   .sponsorTable{
@@ -310,24 +316,20 @@
   }
 
   .buildingPic{
-  // padding-left: 25%;
-  // padding-right: 16%;
-  // padding-bottom: 50px;
-  // padding-top: 52px;
-  padding: 50px 0 0 25%;
-  height: 469px;
-  width: 736px;
+    padding: 50px 0 0 25%;
+    height: 469px;
+    width: 736px;
   }
 
   .formShrink{
-height: 44px;
-width: 419px;
-//padding-left: 563px;
-padding-left: 40%;
-padding-bottom: 115px;
-padding-top: 50px;
-display: inline-block;
+    height: 44px;
+    width: 419px;
+    padding-left: 40%;
+    padding-bottom: 115px;
+    padding-top: 50px;
+    display: inline-block;
   }
+
   .aboveMap{
     padding-bottom: 120px;
   }

@@ -72,13 +72,17 @@ console.log(days);
 
 var hundred = Math.floor(days / 100);
 var one = days % 100;
-// console.log(hundred);
 
 var ten = Math.floor(one / 10);
 one = one % 10;
-// console.log(ten);
-// console.log(one);
 
 document.getElementById("hundreds").innerHTML = hundred;
 document.getElementById("tens").innerHTML = ten;
 document.getElementById("ones").innerHTML = one;
+/*
+function calcTotal(){
+  event.preventDefault();
+  var tots = 20;
+
+  document.getElementById("total").innerHTML = 20;
+}*/

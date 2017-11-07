@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,500,700,800" rel="stylesheet">
     <script type="text/javascript" src="../jquery-3.2.1.js"></script>
-    <script src="../file.js"></script>
+
   </head>
 
   <!-- Container will control overall width of site -->
@@ -48,20 +48,31 @@
       <div class="whitebar"></div>
     </div>
 
-
-    <!-- Burger bar and navigation need added at future time -->
-
-
     <div class="buyTix">
+      <div class="mobileHide block">
+        <a href="#sponsor" class="goldenText">Become a Sponsor</a>
+        <ul>
+          <li>
+            <a href="#about" class="sponsorNav">About the CPOSC</a>
+          </li>
+          <li>
+            <a href="#packages" class="sponsorNav">Sponsorship Packages</a>
+          </li>
+        </ul>
+      </div>
       <div class="ticketButton">
         <p>2017 TICKETS ARE NOW AVAILABLE:</p>
         <button class="buyTickets">
           <a href="tickets.html">BUY TICKETS</a>
         </button>
       </div>
+
     </div>
 
     <section class="sessPad">
+
+      <div class="browserContent" id="sponsor">
+
       <div class="mobileHide">
         <h4 class="goldenText sectName">Become a Sponsor</h4>
         <ul>
@@ -73,6 +84,7 @@
           </li>
         </ul>
       </div>
+        
       <div class="browserContent">
         <h3 class="tixHeader">Become a Sponsor</h3>
         <p class="sectionContent">
@@ -83,6 +95,9 @@
         </p>
       </div>
     </section>
+
+    <section class="bgColor sessPad browserContent" id="about">
+      <h3  class="tixHeader bigHeader">About CPOSC</h3>
 
     <section class="bgColor sessPad browserContent">
       <h3  class="tixHeader bigHeader sectNameTwo">About CPOSC</h3>
@@ -125,7 +140,7 @@
       </ul>
     </section>
 
-    <section class="sponsorTable mobileHide">
+    <section class="sponsorTable mobileHide" id="packages">
       <h3>Sponsorship Packages</h3>
       <table>
         <col width="29%">
@@ -248,24 +263,31 @@
 
 
     <section class="mapSection">
-      <!-- needs to be all caps -->
-      <h4 class="mapHeader">CONFRENCE LOCATIONS</h4>
+      <div class="mapText">
+        <h4 class="mapHeader">CONFRENCE LOCATIONS</h4>
 
-      <h5 class="localHeader">The Ware Center</h5>
-      <p class="mapContent location">at Millersville University</p>
-      <p class="mapContent">42 N. Prince Street,</p>
-      <p class="mapContent">Lancaster, PA 17603</p>
+        <div>
+          <a href="#" onclink="address1()" class="localHeader">The Ware Center</a>
+          <p class="mapContent location">at Millersville University</p>
+          <p class="mapContent">42 N. Prince Street,</p>
+          <p class="mapContent">Lancaster, PA 17603</p>
+        </div>
 
-      <h5 class="localHeader">Prince St. Parking Garage</h5>
-      <p class="mapContent">111 N. Prince Street,</p>
-      <p class="mapContent">Lancaster, PA 17603</p>
+        <div>
+          <a href="#" onclick="address2()") class="localHeader">Prince St. Parking Garage</a>
+          <p class="mapContent">111 N. Prince Street,</p>
+          <p class="mapContent">Lancaster, PA 17603</p>
+        </div>
 
-      <h5 class="localHeader">Tellus360</h5>
-      <p class="mapContent">24 E. King Street,</p>
-      <p class="mapContent">Lancaster, PA 17602</p>
+        <div>
+          <a href="#" onclick="address3()" class="localHeader">Tellus360</a>
+          <p class="mapContent">24 E. King Street,</p>
+          <p class="mapContent">Lancaster, PA 17602</p>
+        </div>
+      </div>
 
-      <!-- div will contain the google maps api -->
-      <div></div>
+
+      <div class="mapContainer" id="map"></div>
     </section>
 
     <footer class="footerBG">
@@ -280,6 +302,10 @@
       <h3 class="footerBold footerBrowser">Connect with CPOSC</h3>
       <h3 class="footerBold footerBb">#CPOSC2017</h3>
     </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zLxrYkjNRcf7Im3kWe_oX2psyt29hgo&callback=initMap"
+            type="text/javascript"></script>
+    <script src="../file.js"></script>
     </footer>
   </body>
 </html>
