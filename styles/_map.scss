@@ -61,4 +61,8 @@
     display: inline-block;
     float: left;
   }
+
+  .mapHeader, .localHeader, .mapContent{
+    padding-left: $other;
+  }
 }

@@ -194,6 +194,16 @@
   font-weight: 500;
 }
 
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 760px){
 
   .browserContent h3, .browserContent p, .browserContent h5, .browserContent li{
@@ -292,5 +302,11 @@
     @include text($lora, $black_text, 16px, 1.5);
   }
 
+  .browserInline{
+    display: inline-block;
+    width: 45%;
+    padding-left: 4%;
+    padding-bottom: 120px;
+  }
 
 }
