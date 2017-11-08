@@ -8,9 +8,7 @@
   line-height: $height;
 }
 
-.mapSection{
-  height: 570px;
-}
+
 
 .mapText{
   background-color: $yellowish;
@@ -52,7 +50,7 @@
 @media only screen and (min-width: 760px){
   .mapContainer{
     width: 60%;
-    display: inline;
+    display: block;
     float: right;
     height: 100%;
   }
@@ -65,5 +63,9 @@
 
   .mapHeader, .localHeader, .mapContent{
     padding-left: $other;
+  }
+
+  .mapSection{
+    height: 570px;
   }
 }

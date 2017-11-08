@@ -79,10 +79,19 @@ one = one % 10;
 document.getElementById("hundreds").innerHTML = hundred;
 document.getElementById("tens").innerHTML = ten;
 document.getElementById("ones").innerHTML = one;
-/*
+
+
+
 function calcTotal(){
   event.preventDefault();
-  var tots = 20;
+  var tots = 0; //initial value
 
-  document.getElementById("total").innerHTML = 20;
-}*/
+  var number = document.getElementById("fourtyTwo").value;
+  tots = tots + parseInt(number) * 42;
+
+  number = document.getElementById("ten").value;
+  tots = tots + parseInt(number) * 10;
+
+
+  document.getElementById("total").innerHTML = "$" + tots;
+}
