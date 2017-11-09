@@ -121,14 +121,18 @@
 
   .ticketButton{
     width: 300px;
+    height: 200px;
+    margin-top: 0;
   }
 
   .homeButton, .buyTix{
-    position: fixed;
+    // position: fixed;
     padding-left: $mobile;
     bottom: 0;
     left: 0;
     top: 0;
+    width: 300px;
+    float: left;
   }
 
   .goldButton{
@@ -153,4 +157,9 @@
     font-weight: bold;
     font-size: 18px;
   }
+
+  .inlineButton{
+    display: inline;
+  }
+
 }

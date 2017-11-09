@@ -212,6 +212,11 @@
     width: 52%;
   }
 
+  .specialContent h3, .specialContent p, .specialContent h5{
+    float: right;
+    width: 52%;
+  }
+
   .inline{
     display: inline-block;
   }
@@ -331,22 +336,35 @@
   }
 
   .aboveMap{
-    padding-bottom: 120px;
+    padding-bottom: 240px;
   }
-  .ticketForm{
-    //float: right;
-  }
+
   .formOne{
     display: inline;
     width: 90%;
-    // padding-right: 965px;
     margin-right: 0;
     height: auto;
-
   }
-.formTwo{
-  display: inline;
-  width: 5%;
-  vertical-align: top;
-}
+
+  .formTwo{
+    display: inline;
+    width: 5%;
+    vertical-align: top;
+  }
+
+  .homeSectionHeader{
+    padding-bottom: 40px;
+  }
+
+  .getDown{
+    padding-bottom: 30px;
+  }
+
+  .moveRight{
+    padding-left: 38.5%;
+  }
+
+  .aboutDown{
+    margin-bottom: 140px;
+  }
 }
