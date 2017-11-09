@@ -18,6 +18,9 @@ $( ".hamburger" ).show();
 
 });
 
+
+
+
 var address = '42 N Prince St, Lancaster, PA 17603';
 mapTest();
 
@@ -33,10 +36,6 @@ function address3(){
   address = '24 E. King Street, Lancaster, PA 17602';
   mapTest();
 }
-
-
-
-
 
 
 function mapTest(){
@@ -57,10 +56,27 @@ function mapTest(){
            map: map
         });
         map.setCenter(results[0].geometry.location);
-        map.setZoom(16);
+        map.setZoom(17);
      }
   });
 }
+/*
+    var map;
+    var geocoder = new google.maps.Geocoder();
+
+    geocoder.geocode({
+       'address': address
+    },
+    function initMap(){
+      map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 16
+        });
+      }
+
+*/
+
+
 
 var nextCPOSC = new Date(2018, 10, 1).getTime(); //sets date to Nov 1, 2018
 var date = new Date().getTime(); //sets date to today's date
