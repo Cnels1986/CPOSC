@@ -18,6 +18,9 @@ $( ".hamburger" ).show();
 
 });
 
+
+
+
 var address = '42 N Prince St, Lancaster, PA 17603';
 mapTest();
 
@@ -33,10 +36,6 @@ function address3(){
   address = '24 E. King Street, Lancaster, PA 17602';
   mapTest();
 }
-
-
-
-
 
 
 function mapTest(){
@@ -57,10 +56,27 @@ function mapTest(){
            map: map
         });
         map.setCenter(results[0].geometry.location);
-        map.setZoom(16);
+        map.setZoom(17);
      }
   });
 }
+/*
+    var map;
+    var geocoder = new google.maps.Geocoder();
+
+    geocoder.geocode({
+       'address': address
+    },
+    function initMap(){
+      map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 16
+        });
+      }
+
+*/
+
+
 
 var nextCPOSC = new Date(2018, 10, 1).getTime(); //sets date to Nov 1, 2018
 var date = new Date().getTime(); //sets date to today's date
@@ -79,10 +95,19 @@ one = one % 10;
 document.getElementById("hundreds").innerHTML = hundred;
 document.getElementById("tens").innerHTML = ten;
 document.getElementById("ones").innerHTML = one;
-/*
+
+
+
 function calcTotal(){
   event.preventDefault();
-  var tots = 20;
+  var tots = 0; //initial value
 
-  document.getElementById("total").innerHTML = 20;
-}*/
+  var number = document.getElementById("fourtyTwo").value;
+  tots = tots + parseInt(number) * 42;
+
+  number = document.getElementById("ten").value;
+  tots = tots + parseInt(number) * 10;
+
+
+  document.getElementById("total").innerHTML = "$" + tots;
+}
