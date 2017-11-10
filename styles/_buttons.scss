@@ -96,6 +96,12 @@
   top: -50px;
 }
 
+.submitButton{
+  color: $off_white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 @media only screen and (min-width: 760px){
   .counter{
     height: 140px;
