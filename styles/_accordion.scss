@@ -1,10 +1,12 @@
 .accordion{
-
   color: $yellowish;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   background-color: white;
   border: none;
+  display: block;
+  float:right;
+  margin-right: 9%;
 }
 
 .panelTest{
@@ -12,7 +14,7 @@
 }
 
 .panelTest.accordionHidden{
-  height: 0px;
+  height: 10px;
 }
 
 div.panel {

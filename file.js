@@ -120,3 +120,9 @@ for (i = 0; i < acc.length; i++) {
     }
   }
 }
+var sidebar = new StickySidebar('#sidebar', {
+        containerSelector: '#main-content',
+        innerWrapperSelector: '.sidebar__inner',
+        topSpacing: 50,
+        bottomSpacing: 10,
+    });

@@ -1,0 +1,26 @@
+@import "variables";
+
+.sidebar{
+  position:relative !important;
+}
+
+@media only screen and (min-width: 760px){
+  .sidebar__inner{
+    width: 300px !important;
+    margin-left: $mobile !important;
+  }
+  .sidebar{
+    position: absolute;
+  }
+
+  // shifts the text towards the right and allows for responsive display
+  .speakerContent{
+    width:52%;
+    margin-left: 35%;
+  }
+
+  .accordionContent{
+    width:50%;
+    padding-left: 35.9%;
+  }
+}
