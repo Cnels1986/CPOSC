@@ -24,6 +24,8 @@
   padding: 20px $mobile 0 $mobile;
   @include text($lora, $black_text, 18px, 1.4);
   font-weight: bold;
+  background-color: $yellowish;
+  border: none;
   // text-decoration: none;
 }
 

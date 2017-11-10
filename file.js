@@ -1,25 +1,17 @@
-$( document ).ready(function() {
+const button = document.querySelector('.hamburger')
+const menu = document.querySelector('.menu')
 
-$( ".cross" ).hide();
-$( ".menu" ).hide();
-$( ".hamburger" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-$( ".hamburger" ).hide();
-$( ".cross" ).show();
-});
-});
+button.addEventListener('click', function() {
+  menu.classList.toggle('isHidden')
+})
+/*
+const accbutton = document.querySelector('.accordion')
+const accsection = document.querySelector('.panelTest')
 
-$( ".cross" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-$( ".cross" ).hide();
-$( ".hamburger" ).show();
-});
-});
-
-});
-
-
-
+accbutton.addEventListener('click', function() {
+  accsection.classList.toggle('accordionHidden')
+})
+*/
 
 var address = '42 N Prince St, Lancaster, PA 17603';
 mapTest();
@@ -36,7 +28,6 @@ function address3(){
   address = '24 E. King Street, Lancaster, PA 17602';
   mapTest();
 }
-
 
 function mapTest(){
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -60,23 +51,6 @@ function mapTest(){
      }
   });
 }
-/*
-    var map;
-    var geocoder = new google.maps.Geocoder();
-
-    geocoder.geocode({
-       'address': address
-    },
-    function initMap(){
-      map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 16
-        });
-      }
-
-*/
-
-
 
 var nextCPOSC = new Date(2018, 10, 1).getTime(); //sets date to Nov 1, 2018
 var date = new Date().getTime(); //sets date to today's date
@@ -110,4 +84,39 @@ function calcTotal(){
 
 
   document.getElementById("total").innerHTML = "$" + tots;
+}
+/*
+function accordion(){
+  var test = document.getElementById("panelTest");
+  var dis = test.getAttribute("display");
+  if(test.style.display == "null"){
+
+    console.log("test");
+  }
+}
+
+/*
+//document.getElementById("accordion").addEventListener("click", accordion);
+
+
+function shrink(){
+  var area = document.getElementByClass("test");
+  console.log(area.style.background_color);
+}*/
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  var panel = acc[i].nextElementSibling;
+  panel.style.maxHeight = panel.scrollHeight + "px";
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  }
 }
