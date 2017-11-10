@@ -6,8 +6,6 @@
     <title>Central Pennsylvania Open Source Confrence-Home</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,500,700,800" rel="stylesheet">
-    <script type="text/javascript" src="../jquery-3.2.1.js"></script>
-
   </head>
 
   <!-- Container will control overall width of site -->
@@ -18,10 +16,9 @@
         <a href="../index.html" class="headerText">Central Pennsylvania Open Source Conference</a>
 
         <button class="hamburger">&#9776;</button>
-        <button class="cross">&#735;</button>
       </header>
 
-      <nav class="navBar menu">
+      <nav class="navBar menu isHidden">
         <ul class="navList">
           <li>
             <a href="about.html" class="navLink">ABOUT</a>
@@ -249,20 +246,20 @@
         <h4 class="mapHeader">CONFRENCE LOCATIONS</h4>
 
         <div>
-          <a href="#" onclink="address1()" class="localHeader">The Ware Center</a>
+          <button onclick="address1()" class="localHeader">The Ware Center</button>
           <p class="mapContent location">at Millersville University</p>
           <p class="mapContent">42 N. Prince Street,</p>
           <p class="mapContent">Lancaster, PA 17603</p>
         </div>
 
         <div>
-          <a href="#" onclick="address2()") class="localHeader">Prince St. Parking Garage</a>
+          <button onclick="address2()" class="localHeader">Prince St. Parking Garage</button>
           <p class="mapContent">111 N. Prince Street,</p>
           <p class="mapContent">Lancaster, PA 17603</p>
         </div>
 
         <div>
-          <a href="#" onclick="address3()" class="localHeader">Tellus360</a>
+          <button onclick="address3()" class="localHeader">Tellus360</button>
           <p class="mapContent">24 E. King Street,</p>
           <p class="mapContent">Lancaster, PA 17602</p>
         </div>
@@ -284,10 +281,14 @@
       <h3 class="footerBold footerBrowser">Connect with CPOSC</h3>
       <h3 class="footerBold footerBb">#CPOSC2017</h3>
     </div>
+    </footer>
 
+
+    <div id="hundreds"></div>
+    <div id="tens"></div>
+    <div id="ones"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zLxrYkjNRcf7Im3kWe_oX2psyt29hgo&callback=initMap"
             type="text/javascript"></script>
     <script src="../file.js"></script>
-    </footer>
   </body>
 </html>

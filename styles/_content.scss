@@ -27,6 +27,7 @@
   font-size: 21px;
 }
 
+// Adds responive side padding and a bottom padding, formats font
 .sectionContent{
   padding: 0 $mobile 28px $mobile;
 
@@ -241,7 +242,11 @@
   .browserContent{
     overflow: hidden;
     padding-bottom: 60px;
+    display: block;
+  }
 
+  .specialContent{
+    padding-bottom: 60px;
   }
 
   .ticketOverview{

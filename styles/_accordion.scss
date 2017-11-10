@@ -1,0 +1,24 @@
+.accordion{
+
+  color: $yellowish;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+}
+
+.panelTest{
+  transition: height 1s ease-out;
+}
+
+.panelTest.accordionHidden{
+  height: 0px;
+}
+
+div.panel {
+    //padding: 0 18px;
+    //background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

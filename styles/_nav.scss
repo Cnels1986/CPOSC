@@ -1,7 +1,7 @@
 @import "variables";
 
 @media only screen and (min-width:761px){
-  .hamburger, .cross{
+  .hamburger, .menu{
     display: none;
   }
 }
@@ -18,9 +18,10 @@
 	}
 	.hamburger{
 	  background:none;
-	  position:absolute;
-	  top:0;
-	  right:0;
+	  //position:absolute;
+	 //top:0;
+	  //right:10px;
+    float: right;
 	  line-height:45px;
 	  padding:36px $mobile 0px;
 	  color: $off_white;
@@ -28,9 +29,10 @@
 	  font-size:4em;
 	  // font-weight:bold;
 	  cursor:pointer;
-	  outline:none;
-	  z-index:10000000000000;
+	 // outline:none;
+	 //z-index:10000000000000;
 	}
+  /*
 	.cross{
 	  background:none;
 	  position:absolute;
@@ -45,16 +47,24 @@
 	  cursor:pointer;
 	  outline:none;
 	  z-index:10000000000000;
-	}
+	}*/
 	.menu{
-	  z-index:1000000;
+	 // z-index:1000000;
 	  font-size:21px;
 	  width:100%;
 	  background-color:$yellowish;
 	  position:absolute;
+    top: 128px;
 	  text-align:left;
 	  font-family: $mont;
+    transition: transform 0.3s ease-out;
+    //transition: opacity 1s;
 	}
+
+  .menu.isHidden{
+    transform: translateX(760px);
+    opacity:0;
+  }
 	.menu ul {
 	  margin: 0;
 	  padding: 0;
@@ -94,10 +104,12 @@
 	  display:inline-block;
 	  font-size:12px;
 	}
-	span{
+	/* span{
 	  padding-left:20px;
-	}
+	}*/
 	a{
 	  color:$black_text;
 	}
+
+
 }
