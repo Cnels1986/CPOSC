@@ -1,17 +1,11 @@
 @import "variables";
 
 .sidebar{
-  position:relative !important;
+  // position:relative !important;
 }
 
 @media only screen and (min-width: 760px){
-  .sidebar__inner{
-    width: 300px !important;
-    margin-left: $mobile !important;
-  }
-  .sidebar{
-    position: absolute;
-  }
+
 
   // shifts the text towards the right and allows for responsive display
   .speakerContent{
@@ -22,5 +16,16 @@
   .accordionContent{
     width:50%;
     padding-left: 35.9%;
+  }
+  .sidebar__inner{
+    width: 300px !important;
+    margin-left: $mobile !important;
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+  }
+  .sidebar{
+    // position: absolute;
+    will-change: min-height;
   }
 }
