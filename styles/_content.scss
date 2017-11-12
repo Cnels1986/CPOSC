@@ -23,6 +23,13 @@
   font-weight: bold;
 }
 
+.sectionHeaderTime{
+  padding: 30px $mobile 5px $mobile;
+
+  @include text($mont, $black_text, 18px, 1.7);
+  font-weight: bold;
+}
+
 .makeBigger{
   font-size: 21px;
 }
@@ -32,6 +39,12 @@
   padding: 0 $mobile 28px $mobile;
 
   @include text($lora, $black_text, 16px, 1.5);
+}
+
+.sectionContentTime{
+  padding: 0 $mobile 28px $mobile;
+
+  @include text($mont, $black_text, 16px, 1.5);
 }
 
 .sectionContent strong{
@@ -54,7 +67,7 @@
 }
 
 .iNeedSpace{
-  padding-top: 50px;
+  padding-top: 50px !important;
 }
 
 .goldenText{
@@ -122,12 +135,12 @@
 
 .sponsorInfo li{
   padding: 6px 0;
+  list-style-position: inside;
 }
 
 .aboutInfo{
   padding: 0 $mobile;
-
-  @include text($lora, $black_text, 18px, 1);
+  @include text($lora, $black_text, 18px, 1.3);
 }
 
 .formHeader{
@@ -168,32 +181,46 @@
 .ticketForm{
   height: 50px;
   width: 100px;
+  border-radius: 0;
   border: 1px solid black;
-  border-radius: 0px;
+
   margin-left: $mobile;
+  background-color: white;
 
   @include text($mont, $black_text, 24px, 1);
   padding: 10px 25px;
 }
 
 .totalBox{
-  height: 55px;
+  height: 40px;
   width: 170px;
   border: 1px solid black;
   float: right;
   margin-right: $mobile;
   display: inline;
   margin-bottom: 50px;
+  margin-right: 0;
+  text-align: center;
+  margin-top: 10px;
+
+  padding-top: 15px;
+  @include text($mont, $black_text, 24px, 1);
+  font-weight:500;
   // margin: 30px $mobile 50px 0;
 }
 
 .totalHeader{
-  display: inline;
-  width: 50%;
+  display: inline-block;
+  width: 30%;
   padding-left: $mobile;
-  padding-top: 20px;
+  padding-top: 15px;
+  // margin-bottom: 50px;
   @include text($mont, $black_text, 21px, 1.6);
   font-weight: 500;
+}
+
+.spacing{
+  margin-bottom: 70px;
 }
 
 
@@ -256,7 +283,7 @@
 
   .ticketContent{
     font-family: $mont;
-    width: 66%;
+    // width: 66%;
     font-size: 21px;
   }
 
@@ -269,7 +296,8 @@
   }
 
   .purchaseTick{
-    height: 300px;
+    width: 50%;
+    height: auto;
     color: $black_text;
   }
 
@@ -377,5 +405,32 @@
     height: 20px;
     padding-top: 20px;
     padding-left: 12px;
+    display: inline;
+  }
+
+  .contactMove{
+    padding-left: 40%;
+  }
+
+  .totalHeader{
+    padding-left: 12%;
+  }
+
+  .purchase{
+    height: 270px;
+  }
+  // decreases width of content to make a column
+  .ticketContentBrowser{
+    width: 66%;
+    padding-left: 2%;
+    display: inline-block;
+  }
+  // creates another column so content and select can be aligned side by side
+  .ticketFormBrowser{
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+    float:right;
+    padding-top: 15px;
   }
 }
