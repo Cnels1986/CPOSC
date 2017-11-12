@@ -1,3 +1,4 @@
+
 const button = document.querySelector('.hamburger')
 const menu = document.querySelector('.menu')
 
@@ -92,25 +93,10 @@ function calcTotal(){
 
   document.getElementById("total").innerHTML = "$" + tots;
 }
-/*
-function accordion(){
-  var test = document.getElementById("panelTest");
-  var dis = test.getAttribute("display");
-  if(test.style.display == "null"){
-
-    console.log("test");
-  }
-}
-
-/*
-//document.getElementById("accordion").addEventListener("click", accordion);
 
 
-function shrink(){
-  var area = document.getElementByClass("test");
-  console.log(area.style.background_color);
-}*/
 
+// Edited code from https://www.w3schools.com/howto/howto_js_accordion.asp
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -127,11 +113,11 @@ for (i = 0; i < acc.length; i++) {
     }
   }
 }
-/*
+
+
 var sidebar = new StickySidebar('#sidebar', {
         containerSelector: '#main-content',
         innerWrapperSelector: '.sidebar__inner',
         topSpacing: 50,
         bottomSpacing: 10,
     });
-*/
