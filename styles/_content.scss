@@ -43,7 +43,6 @@
 
 .sectionContentTime{
   padding: 0 $mobile 28px $mobile;
-
   @include text($mont, $black_text, 16px, 1.5);
 }
 
@@ -53,7 +52,6 @@
 
 .bgColor{
   background-color: $grayish;
-  width: 100%;
 }
 
 //Adds padding between the different sessions on the sessions page
@@ -236,11 +234,6 @@
 @media only screen and (min-width: 760px){
 
   .browserContent h3, .browserContent p, .browserContent h5, .browserContent li{
-    float: right;
-    width: 52%;
-  }
-
-  .specialContent h3, .specialContent p, .specialContent h5{
     float: right;
     width: 52%;
   }
