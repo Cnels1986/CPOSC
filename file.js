@@ -82,6 +82,13 @@ function calcTotal(){
   number = document.getElementById("ten").value;
   tots = tots + parseInt(number) * 10;
 
+  number = document.getElementById("zero").value;
+  tots = tots + parseInt(number) * 0;
+  number = document.getElementById("free").value;
+  tots = tots + parseInt(number) * 0;
+  number = document.getElementById("student").value;
+  tots = tots + parseInt(number) * 0;
+
 
   document.getElementById("total").innerHTML = "$" + tots;
 }
