@@ -2,13 +2,23 @@
   color: $yellowish;
   font-size: 50px;
   font-weight: bold;
-  background-color: white;
+  background-color: transparent;;
   border: none;
-  display: block;
-  float:right;
+  // display: block;
+  // float:right;
   margin-right: 9%;
+  padding-top: 10px;
 }
 
+.accordionBG{
+  width:100%;
+}
+
+
+.panel.hide{
+  opacity: 0;
+}
+/*
 .panelTest{
   transition: height 1s ease-out;
 }
@@ -16,11 +26,52 @@
 .panelTest.accordionHidden{
   height: 10px;
 }
-
+*/
 div.panel {
     //padding: 0 18px;
     //background-color: white;
-    max-height: 0;
+    width: 100%;
+    max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.4s ease-out;
+}
+
+.accordionSection .goldenText{
+  width:50%;
+  float: left;
+  padding-left: $mobile;
+}
+
+.accordionArrow{
+  float: right;
+  margin-right: $mobile;
+}
+
+@media only screen and (min-width: 760px){
+.accordionSection{
+  // width: 47%;
+  margin-left: 39.5%;
+  display: inline-block;
+}
+
+.accordionSection h3, .accordionSection p{
+  width:90%;
+}
+
+.accordionSpacing{
+  padding-bottom: 10px;
+}
+
+.accordionSection .goldenText{
+  padding-left: 4%;
+}
+
+.accordionArrow{
+  // padding-top: 35px;
+  // width: 10%;
+  padding-right: $mobile;
+  float: right;
+  display: inline;
+}
+
 }
