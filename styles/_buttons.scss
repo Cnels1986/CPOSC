@@ -178,7 +178,7 @@
     background-color: $yellowish;
 
     // display: block;
-    margin: 45px 0 45px 42%;
+    margin: 45px 0 45px 13%;
     border: none;
   }
   .specialButton a{
@@ -206,13 +206,28 @@
     padding-left: 10.5%;
   }
 
-  .sidebar{
-    will-change: min-height;
+
+  .buttonContentSpeakers{
+    // float: right;
+    width: 65%;
   }
-  .sidebar__inner{
-      transform: translate(0, 0); /* For browsers don't support translate3d. */
-      transform: translate3d(0, 0, 0);
-      will-change: position, transform;
+  .buttonContentSpeakers h3, .buttonContentSpeakers p, .buttonContentSpeakers h5{
+    // width: 65%;
+    // padding-right: 10%;
+    // float: right;
+    // padding-right: 10%;
   }
 
+  .stickyTest{
+    position: fixed;
+    margin: 20px 0px;
+  }
+
+  .sidebar{
+    transition: transform 0.2s;
+  }
+  .sidebar.byeStick{
+    transform: translateX(-500px);
+
+  }
 }

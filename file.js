@@ -5,14 +5,7 @@ const menu = document.querySelector('.menu')
 button.addEventListener('click', function() {
   menu.classList.toggle('isHidden')
 })
-/*
-const accbutton = document.querySelector('.accordion')
-const accsection = document.querySelector('.panelTest')
 
-accbutton.addEventListener('click', function() {
-  accsection.classList.toggle('accordionHidden')
-})
-*/
 
 var address = '42 N Prince St, Lancaster, PA 17603';
 mapTest();
@@ -114,10 +107,33 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 
+function addStick(someDiv){
+   someDiv.classList.add("stickyTest");
+}
+function removeStick(someDiv){
+  someDiv.classList.remove("stickyTest");
+}
+function byeStick(someDiv){
+  someDiv.classList.add('byeStick');
+}
+function backStick(someDiv){
+  someDiv.classList.remove('byeStick');
+}
 
-var sidebar = new StickySidebar('#sidebar', {
-        containerSelector: '#main-content',
-        innerWrapperSelector: '.sidebar__inner',
-        topSpacing: 50,
-        bottomSpacing: 10,
-    });
+// Homepage only
+window.addEventListener('scroll', function(ev) {
+
+  var someDiv = document.getElementById('sidebar');
+
+  if(window.scrollY > 720)
+  addStick(someDiv);
+  if(window.scrollY >= 1420)
+  byeStick(someDiv);
+  if(window.scrollY < 1420 && window.scrollY > 720)
+  backStick(someDiv);
+  if(window.scrollY < 720)
+  removeStick(someDiv);
+
+  console.log(window.scrollY);
+  
+});

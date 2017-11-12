@@ -352,6 +352,13 @@
     width: 736px;
   }
 
+  .upper{
+    z-index: 2;
+  }
+  .bottom{
+    z-index: 1;
+  }
+
   .formShrink{
     height: 44px;
     width: 419px;
@@ -425,5 +432,10 @@
     vertical-align: top;
     float:right;
     padding-top: 15px;
+  }
+
+  .fixSponsor{
+    width: 61.5%;
+    float: right;
   }
 }
