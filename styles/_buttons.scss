@@ -141,6 +141,10 @@
     float: left;
   }
 
+  .buyTix{
+    padding-top: 70px;
+  }
+
   .goldButton{
     float: right;
     margin: 0;
@@ -183,6 +187,32 @@
     @include text($mont, $off_white, 18px, 1.7);
     font-weight: bold;
     text-align: center;
+  }
+
+  .hideButton{
+    display: none;
+  }
+
+  .buttonSpacing{
+    margin: 70px $mobile;
+  }
+
+  .buttonContent{
+    width: 65%;
+    float: right;
+  }
+
+  .buttonContent h3, .buttonContent p{
+    padding-left: 10.5%;
+  }
+
+  .sidebar{
+    will-change: min-height;
+  }
+  .sidebar__inner{
+      transform: translate(0, 0); /* For browsers don't support translate3d. */
+      transform: translate3d(0, 0, 0);
+      will-change: position, transform;
   }
 
 }
