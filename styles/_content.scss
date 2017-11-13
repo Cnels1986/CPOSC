@@ -197,7 +197,7 @@
   margin-right: $mobile;
   display: inline;
   margin-bottom: 50px;
-  margin-right: 0;
+  margin-right: $mobile;
   text-align: center;
   margin-top: 10px;
 
@@ -436,8 +436,9 @@
   }
 
   .fixSponsor{
-    width: 61.5%;
-    float: right;
+    width: 57.5%;
+    // float: right;
+    padding-left: 39%;
   }
 
   .specialContent{
@@ -451,5 +452,4 @@
     margin-left: 36%;
   }
 
-  .sponsorContentOverride {}
 }

@@ -136,19 +136,30 @@ var sbs = document.getElementById('sideBarStop');
 var sideBarStop = sbs.getBoundingClientRect();
 
 // the top of the sidebar button, with 30px buffer
-var SBtop = sideBarTop.top - body.top + 30;
+var SBtop = sideBarTop.top - body.top + 10;
 if(page == "index.html")
   SBtop = sideBarTop.top - body.top - 30;
 //the bottom of where the sidebar should go, with height of button considered
 var stop = sideBarStop.top - body.top - 260;
 
 // determines if its the button with links above to change height
-if(page == "about.html" || page == "sponsor.html"){
+if(page == "about.html"){
   stop = stop - 220;
+}
+if(page == "sponsor.html"){
+  stop = stop -190;
+  console.log(stop);
 }
 if(page == "speakers.html"){
     // stop = SBtop  + 100;
-    console.log(SBtop);
+    // var panels = document.getElementsByClassName('panel');
+    // var totsHeight = 0;
+    // for(var q = 0; q <= panels.length; q++){
+    //   totsHeight = totsHeight + panels[q].offsetHeight;
+    // }
+    // console.log(totsHeight);
+    // console.log("test")
+    // console.log(SBtop);
 }
 
 
@@ -156,8 +167,6 @@ if(page == "speakers.html"){
 
 // Homepage only
 window.addEventListener('scroll', function(ev) {
-console.log("bottom " + stop);
-console.log(" top " +SBtop);
   var someDiv = document.getElementById('sidebar');
 
   // if(window.scrollY > 720)
