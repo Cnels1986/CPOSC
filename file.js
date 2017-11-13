@@ -52,7 +52,7 @@ var date = new Date().getTime(); //sets date to today's date
 var x = nextCPOSC - date;
 var days = Math.floor(x / (1000 * 60 * 60 * 24));
 
-console.log(days);
+// console.log(days);
 
 var hundred = Math.floor(days / 100);
 var one = days % 100;
@@ -120,20 +120,63 @@ function backStick(someDiv){
   someDiv.classList.remove('byeStick');
 }
 
+
+// finds file name
+var path = window.location.pathname;
+var page = path.split("/").pop();
+console.log( page );
+
+
+
+
+var body = document.body.getBoundingClientRect();
+var sbt = document.getElementById('sidebar');
+var sideBarTop = sbt.getBoundingClientRect();
+var sbs = document.getElementById('sideBarStop');
+var sideBarStop = sbs.getBoundingClientRect();
+
+// the top of the sidebar button, with 30px buffer
+var SBtop = sideBarTop.top - body.top + 30;
+if(page == "index.html")
+  SBtop = sideBarTop.top - body.top - 20;
+//the bottom of where the sidebar should go, with height of button considered
+var stop = sideBarStop.top - body.top - 260;
+
+// determines if its the button with links above to change height
+if(page == "about.html" || page == "sponsor.html"){
+  stop = stop - 220;
+}
+if(page == "speakers.html"){
+    // stop = SBtop  + 100;
+    console.log(SBtop);
+}
+
+
+
+
 // Homepage only
 window.addEventListener('scroll', function(ev) {
-
+console.log("bottom " + stop);
+console.log(" top " +SBtop);
   var someDiv = document.getElementById('sidebar');
 
-  if(window.scrollY > 720)
+  // if(window.scrollY > 720)
+  // addStick(someDiv);
+  // if(window.scrollY >= 1420)
+  // byeStick(someDiv);
+  // if(window.scrollY < 1420 && window.scrollY > 720)
+  // backStick(someDiv);
+  // if(window.scrollY < 720)
+  // removeStick(someDiv);
+  if(window.scrollY > SBtop)
   addStick(someDiv);
-  if(window.scrollY >= 1420)
+  if(window.scrollY >= stop)
   byeStick(someDiv);
-  if(window.scrollY < 1420 && window.scrollY > 720)
+  if(window.scrollY < stop && window.scrollY > SBtop)
   backStick(someDiv);
-  if(window.scrollY < 720)
+  if(window.scrollY < SBtop)
   removeStick(someDiv);
 
-  console.log(window.scrollY);
-  
+  // console.log(window.scrollY);
+
 });
