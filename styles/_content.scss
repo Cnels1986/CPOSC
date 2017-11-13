@@ -441,7 +441,9 @@
   }
 
   .specialContent{
-    width: 100%;
+   width: 53%;
+   padding-left: 19.5%;
+  //  padding-right: $mobile;
   }
   // dealing with the sticky button on the browser
   .specialContent h5, .specialContent h3, .specialContent p{

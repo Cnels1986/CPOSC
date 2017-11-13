@@ -138,7 +138,7 @@ var sideBarStop = sbs.getBoundingClientRect();
 // the top of the sidebar button, with 30px buffer
 var SBtop = sideBarTop.top - body.top + 30;
 if(page == "index.html")
-  SBtop = sideBarTop.top - body.top - 20;
+  SBtop = sideBarTop.top - body.top - 30;
 //the bottom of where the sidebar should go, with height of button considered
 var stop = sideBarStop.top - body.top - 260;
 
