@@ -350,6 +350,7 @@
     padding: 50px 0 0 25%;
     height: 469px;
     width: 736px;
+    position: relative;
   }
 
   .upper{
@@ -438,4 +439,15 @@
     width: 61.5%;
     float: right;
   }
+
+  .specialContent{
+    width: 100%;
+  }
+  // dealing with the sticky button on the browser
+  .specialContent h5, .specialContent h3, .specialContent p{
+    width: 100%;
+    margin-left: 36%;
+  }
+
+  .sponsorContentOverride {}
 }

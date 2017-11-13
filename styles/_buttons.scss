@@ -178,8 +178,9 @@
     background-color: $yellowish;
 
     // display: block;
-    margin: 45px 0 45px 13%;
+    margin: 45px 0 45px 42%;
     border: none;
+    float: right;
   }
   .specialButton a{
     padding: 15px;
@@ -208,14 +209,15 @@
 
 
   .buttonContentSpeakers{
-    // float: right;
-    width: 65%;
+    float: right;
+    width: 100%;
+    background-color: white;
   }
   .buttonContentSpeakers h3, .buttonContentSpeakers p, .buttonContentSpeakers h5{
-    // width: 65%;
-    // padding-right: 10%;
-    // float: right;
-    // padding-right: 10%;
+    width: 65%;
+    padding-right: 10%;
+    float: right;
+    padding-right: 10%;
   }
 
   .stickyTest{
