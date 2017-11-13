@@ -54,16 +54,19 @@
   height: 50px;
   background-color: $off_white;
   border: none;
+  text-decoration: none;
 }
 
-.buyTickets a{
-  margin: 0 auto;
+.buyTickets h3{
+  text-align: center;
+  padding-top: 15px;
   font-family: $mont;
   font-size: 18px;
   font-weight: bold;
   color: $yellowish;
   text-decoration: none;
 }
+
 
 .goldButton{
   width: 280px;
@@ -180,7 +183,7 @@
     background-color: $yellowish;
 
     // display: block;
-    margin: 45px 0 45px 42%;
+    margin: 0px 0px 43px 106%;
     border: none;
     // float: right;
   }
@@ -232,6 +235,9 @@
   }
   .sidebar.byeStick{
     transform: translateX(-500px);
+  }
 
+  .fixButton{
+    width: 40%;
   }
 }
