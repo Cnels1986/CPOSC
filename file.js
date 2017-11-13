@@ -1,4 +1,9 @@
+// finds file name
+var path = window.location.pathname;
+var page = path.split("/").pop();
+console.log( page );
 
+// burger menu, toggles the isHidden function which transforms the nav menu
 const button = document.querySelector('.hamburger')
 const menu = document.querySelector('.menu')
 
@@ -6,10 +11,12 @@ button.addEventListener('click', function() {
   menu.classList.toggle('isHidden')
 })
 
-
+// initial address for the home page
 var address = '42 N Prince St, Lancaster, PA 17603';
 mapTest();
 
+
+// changes the address variable and redraws the map, functions called based on button pressed
 function address1(){
   address = '42 N Prince St, Lancaster, PA 17603';
   mapTest();
@@ -23,51 +30,57 @@ function address3(){
   mapTest();
 }
 
+// redraws map api with the given address
 function mapTest(){
   var map = new google.maps.Map(document.getElementById('map'), {
-      mapTypeId: google.maps.MapTypeId.TERRAIN,
-      zoom: 6
+    mapTypeId: google.maps.MapTypeId.TERRAIN,
+    zoom: 6
   });
 
   var geocoder = new google.maps.Geocoder();
 
   geocoder.geocode({
-     'address': address
+    'address': address
   },
   function(results, status) {
-     if(status == google.maps.GeocoderStatus.OK) {
-        new google.maps.Marker({
-           position: results[0].geometry.location,
-           map: map
-        });
-        map.setCenter(results[0].geometry.location);
-        map.setZoom(17);
-     }
+    if(status == google.maps.GeocoderStatus.OK) {
+      new google.maps.Marker({
+        position: results[0].geometry.location,
+        map: map
+      });
+      map.setCenter(results[0].geometry.location);
+      map.setZoom(18);
+    }
   });
 }
 
-var nextCPOSC = new Date(2018, 10, 1).getTime(); //sets date to Nov 1, 2018
-var date = new Date().getTime(); //sets date to today's date
+if(page == "index.html"){
+  var nextCPOSC = new Date(2018, 10, 1).getTime(); //sets date to Nov 1, 2018
+  var date = new Date().getTime(); //sets date to today's date
 
-var x = nextCPOSC - date;
-var days = Math.floor(x / (1000 * 60 * 60 * 24));
+  // finds the difference in time
+  var x = nextCPOSC - date;
+  // calculated the amount of days from the give time
+  var days = Math.floor(x / (1000 * 60 * 60 * 24));
+  // determines the hundreds number for the amount of days
+  var hundred = Math.floor(days / 100);
+  // determines the ones
+  var one = days % 100;
 
-// console.log(days);
+  // determines the tens
+  var ten = Math.floor(one / 10);
+  one = one % 10;
 
-var hundred = Math.floor(days / 100);
-var one = days % 100;
-
-var ten = Math.floor(one / 10);
-one = one % 10;
-
-document.getElementById("hundreds").innerHTML = hundred;
-document.getElementById("tens").innerHTML = ten;
-document.getElementById("ones").innerHTML = one;
+  document.getElementById("hundreds").innerHTML = hundred;
+  document.getElementById("tens").innerHTML = ten;
+  document.getElementById("ones").innerHTML = one;
+}
 
 
 
+// calculates the total price of tickets from each of the select menus
 function calcTotal(){
-  event.preventDefault();
+  // event.preventDefault();
   var tots = 0; //initial value
 
   var number = document.getElementById("fourtyTwo").value;
@@ -88,27 +101,9 @@ function calcTotal(){
 }
 
 
-
-// Edited code from https://www.w3schools.com/howto/howto_js_accordion.asp
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  var panel = acc[i].nextElementSibling;
-  panel.style.maxHeight = panel.scrollHeight + "px";
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  }
-}
-
+//functions to add or remove classes from the sidebar
 function addStick(someDiv){
-   someDiv.classList.add("stickyTest");
+  someDiv.classList.add("stickyTest");
 }
 function removeStick(someDiv){
   someDiv.classList.remove("stickyTest");
@@ -121,14 +116,8 @@ function backStick(someDiv){
 }
 
 
-// finds file name
-var path = window.location.pathname;
-var page = path.split("/").pop();
-console.log( page );
-
-
-
-
+// used for determining the height of the speakers page with the accordion
+var totsHeight = 0;
 var body = document.body.getBoundingClientRect();
 var sbt = document.getElementById('sidebar');
 var sideBarTop = sbt.getBoundingClientRect();
@@ -147,36 +136,23 @@ if(page == "about.html"){
   stop = stop - 220;
 }
 if(page == "sponsor.html"){
-  stop = stop -190;
-  console.log(stop);
+  stop = stop - 190;
 }
+// Gets initial height of the speakers page, with all the accordion panels open
 if(page == "speakers.html"){
-    // stop = SBtop  + 100;
-    // var panels = document.getElementsByClassName('panel');
-    // var totsHeight = 0;
-    // for(var q = 0; q <= panels.length; q++){
-    //   totsHeight = totsHeight + panels[q].offsetHeight;
-    // }
-    // console.log(totsHeight);
-    // console.log("test")
-    // console.log(SBtop);
+  var panels = document.getElementsByClassName('panel');
+  for(var q = 0; q <= panels.length; q++){
+    totsHeight = totsHeight + 300;
+  }
+  stop = stop + totsHeight;
 }
-
-
 
 
 // Homepage only
 window.addEventListener('scroll', function(ev) {
   var someDiv = document.getElementById('sidebar');
 
-  // if(window.scrollY > 720)
-  // addStick(someDiv);
-  // if(window.scrollY >= 1420)
-  // byeStick(someDiv);
-  // if(window.scrollY < 1420 && window.scrollY > 720)
-  // backStick(someDiv);
-  // if(window.scrollY < 720)
-  // removeStick(someDiv);
+// depending on the distance of the scroll, classes will added or removed to alter the side menu
   if(window.scrollY > SBtop)
   addStick(someDiv);
   if(window.scrollY >= stop)
@@ -185,7 +161,28 @@ window.addEventListener('scroll', function(ev) {
   backStick(someDiv);
   if(window.scrollY < SBtop)
   removeStick(someDiv);
-
-  // console.log(window.scrollY);
-
 });
+
+
+// Edited code from https://www.w3schools.com/howto/howto_js_accordion.asp
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+// if a panel is opened or closed, the stop variable is altered to reflect the websites change in height
+for (i = 0; i < acc.length; i++) {
+  var panel = acc[i].nextElementSibling;
+  panel.style.maxHeight = panel.scrollHeight + "px";
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      stop = stop - 325;
+      console.log(stop);
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      stop = stop + 300;
+      console.log(totsHeight);
+    }
+  }
+}
