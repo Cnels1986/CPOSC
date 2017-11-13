@@ -139,10 +139,12 @@
     top: 0;
     width: 300px;
     float: left;
+    padding-left: 3%;
   }
 
   .buyTix{
     padding-top: 70px;
+
   }
 
   .goldButton{
@@ -180,7 +182,7 @@
     // display: block;
     margin: 45px 0 45px 42%;
     border: none;
-    float: right;
+    // float: right;
   }
   .specialButton a{
     padding: 15px;
