@@ -65,11 +65,12 @@ if(page == "index.html"){
   var days = Math.floor(x / (1000 * 60 * 60 * 24));
   // determines the hundreds number for the amount of days
   var hundred = Math.floor(days / 100);
-  // determines the ones
+
   var one = days % 100;
 
   // determines the tens
   var ten = Math.floor(one / 10);
+  // determines the ones
   one = one % 10;
 
   document.getElementById("hundreds").innerHTML = hundred;
