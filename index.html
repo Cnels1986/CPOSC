@@ -17,7 +17,7 @@
 
       <button class="hamburger">&#9776;</button>
     </header>
-
+    <!-- menu bar and nav menu -->
     <nav class="navBar menu isHidden">
       <ul class="navList">
         <li>
@@ -45,6 +45,7 @@
     <div class="whitebar"></div>
   </div>
 
+  <!-- day counter that uses javascrip to calculate the number of days left, breaking it into the hundreds, tens, and ones -->
   <div class="counter_ticket_container">
 
     <div class="counter">
@@ -64,12 +65,13 @@
     </div>
   </div>
 
+  <!-- sticky sidebar -->
   <div id="main-content" class="main">
     <div class="homeButton sidebar" id="sidebar">
       <div class="ticketButton sidebar__inner">
         <p>2017 TICKETS ARE NOW AVAILABLE:</p>
         <a href="pages/tickets.html" class="buyTickets">
-            <h3>BUY TICKETS</h3>
+          <h3>BUY TICKETS</h3>
         </a>
       </div>
     </div>
@@ -107,105 +109,108 @@
       </div>
     </div>
   </div>
+  <!-- sticky side bar will stop here -->
+  <div id="sideBarStop"></div>
+  <div>
+    <div class="inline conSponsor">
+      <h3 class="homeSectionHeader iNeedSpace">Conference Sponsors</h3>
+      <p class="sectionContent">Thank you for supporting open source in Central Pennsylvania!</p>
+    </div>
+    <button class="goldButton inline">
+      <a href="pages/sponsor.html">BECOME A SPONSOR</a>
+    </button>
+  </div>
 
-    <div  id="sideBarStop"></div>
-    <div>
-      <div class="inline conSponsor">
-        <h3 class="homeSectionHeader iNeedSpace">Conference Sponsors</h3>
-        <p class="sectionContent">Thank you for supporting open source in Central Pennsylvania!</p>
-      </div>
-      <button class="goldButton inline">
-        <a href="pages/sponsor.html">BECOME A SPONSOR</a>
-      </button>
+
+  <!-- this section contains all of the logos, making them links to their websites -->
+  <section>
+    <h4 class = "goldenText">PLATINUM SPONSORS</h4>
+    <div class = "logoContainer">
+      <a href="http://www.seisan.com/" target="_blank"><img src="images/SeisanLogo.png" class="logoPic"></a>
     </div>
 
-    <!-- Sections needs to be all cap -->
-    <section>
-      <h4 class = "goldenText">PLATINUM SPONSORS</h4>
+    <h4 class = "goldenText">GOLD SPONSORS</h4>
+    <div class = "logoContainer">
+      <a href="https://printedsolid.com/" target="_blank"><img src="images/printedsolid.png" class="logoPic"></a>
+      <a href="http://shiftlabny.com/" target="_blank"><img src="images/shiftlab.png" class="logoPic"></a>
+      <a href="https://www.linode.com/" target="_blank"><img src="images/linode.png" class="logoPic"></a>
+    </div>
+
+    <h4 class = "goldenText">SILVER SPONSORS</h4>
+    <div class = "logoContainer">
+      <a href="https://www.lulzbot.com/" target="_blank"><img src="images/lulzbot.jpeg" class="logoPic"></a>
+      <a href="https://tapestrytech.com/" target="_blank"><img src="images/tapestry.png" class="logoPic"></a>
+      <a href="https://www.elastic.co/" target="_blank"><img src="images/elastic.png" class="logoPic"></a>
+    </div>
+
+    <div class="browserInline">
+      <h4 class = "goldenText">BROZE SPONSORS</h4>
       <div class = "logoContainer">
-        <a href="http://www.seisan.com/" target="_blank"><img src="images/SeisanLogo.png" class="logoPic"></a>
+        <a href="https://www.lullabot.com/" target="_blank"><img src="images/lullabot.png" class="logoPic"></a>
       </div>
+    </div>
 
-      <h4 class = "goldenText">GOLD SPONSORS</h4>
+    <div class="browserInline">
+      <h4 class ="goldenText">Host Sponsors</h4>
       <div class = "logoContainer">
-        <a href="https://printedsolid.com/" target="_blank"><img src="images/printedsolid.png" class="logoPic"></a>
-        <a href="http://shiftlabny.com/" target="_blank"><img src="images/shiftlab.png" class="logoPic"></a>
-        <a href="https://www.linode.com/" target="_blank"><img src="images/linode.png" class="logoPic"></a>
+        <a href="http://www.artsmu.com/" target="_blank"><img src="images/millersville.jpg" class="logoPic"></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- google map api section -->
+  <section class="mapSection">
+    <div class="mapText">
+      <h4 class="mapHeader">CONFERENCE LOCATIONS</h4>
+
+      <div>
+        <button onclick="address1()" class="localHeader">The Ware Center</button>
+        <p class="mapContent location">at Millersville University</p>
+        <p class="mapContent">42 N. Prince Street,</p>
+        <p class="mapContent">Lancaster, PA 17603</p>
       </div>
 
-      <h4 class = "goldenText">SILVER SPONSORS</h4>
-      <div class = "logoContainer">
-        <a href="https://www.lulzbot.com/" target="_blank"><img src="images/lulzbot.jpeg" class="logoPic"></a>
-        <a href="https://tapestrytech.com/" target="_blank"><img src="images/tapestry.png" class="logoPic"></a>
-        <a href="https://www.elastic.co/" target="_blank"><img src="images/elastic.png" class="logoPic"></a>
+      <div>
+        <button onclick="address2()" class="localHeader">Prince St. Parking Garage</button>
+        <p class="mapContent">111 N. Prince Street,</p>
+        <p class="mapContent">Lancaster, PA 17603</p>
       </div>
 
-      <div class="browserInline">
-        <h4 class = "goldenText">BROZE SPONSORS</h4>
-        <div class = "logoContainer">
-          <a href="https://www.lullabot.com/" target="_blank"><img src="images/lullabot.png" class="logoPic"></a>
-        </div>
+      <div>
+        <button onclick="address3()" class="localHeader">Tellus360</button>
+        <p class="mapContent">24 E. King Street,</p>
+        <p class="mapContent">Lancaster, PA 17602</p>
       </div>
+    </div>
 
-      <div class="browserInline">
-        <h4 class ="goldenText">Host Sponsors</h4>
-        <div class = "logoContainer">
-          <a href="http://www.artsmu.com/" target="_blank"><img src="images/millersville.jpg" class="logoPic"></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="mapSection">
-      <div class="mapText">
-        <h4 class="mapHeader">CONFERENCE LOCATIONS</h4>
-
-        <div>
-          <button onclick="address1()" class="localHeader">The Ware Center</button>
-          <p class="mapContent location">at Millersville University</p>
-          <p class="mapContent">42 N. Prince Street,</p>
-          <p class="mapContent">Lancaster, PA 17603</p>
-        </div>
-
-        <div>
-          <button onclick="address2()" class="localHeader">Prince St. Parking Garage</button>
-          <p class="mapContent">111 N. Prince Street,</p>
-          <p class="mapContent">Lancaster, PA 17603</p>
-        </div>
-
-        <div>
-          <button onclick="address3()" class="localHeader">Tellus360</button>
-          <p class="mapContent">24 E. King Street,</p>
-          <p class="mapContent">Lancaster, PA 17602</p>
-        </div>
-      </div>
+    <div class="mapContainer" id="map"></div>
+  </section>
 
 
-      <div class="mapContainer" id="map"></div>
-    </section>
+  <!-- footer section -->
+  <footer class="footerBG block">
+    <div class="footerFirst">
+      <h3 class="footerBold footerBrowser">Code of Conduct</h3>
+      <p class="footerContent footerBb">
+        CPOSC is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found on our About page, under
+        <a href="http://cposc.org/code-of-conduct/" target="_blank">Code of Conduct.</a>
+      </p>
+    </div>
+    <div class="footerSecond">
+      <h3 class="footerBold footerBrowser otherFoot">Connect with CPOSC</h3>
+      <!-- social media icons that only appear on the home page, will become hidden in the mobile version -->
+      <a target="_blank" href ="https://www.facebook.com/CPOSC2008/"><img  class="logo mobileHide" src="images/facebook.png"></a>
+      <a target="_blank" href ="https://twitter.com/CPOSC"><img  class="logo mobileHide" src="images/twitter.png"></a>
+      <a target="_blank" href="https://www.linkedin.com/company/central-pa-open-source-conference"><img  class="logo mobileHide" src="images/in.png"></a>
+      <a target="_blank" href="https://github.com/cposc"><img  class="logo mobileHide" src="images/github.png"></a>
+      <a target="_blank" href="https://www.meetup.com/CPOSC_/"><img  class="logo mobileHide" src="images/meetup.png"></a>
+      <h3 class="footerBold footerBb logospacing">#CPOSC2017</h3>
+    </div>
+  </footer>
 
-    <footer class="footerBG block">
-      <div class="footerFirst">
-        <h3 class="footerBold footerBrowser">Code of Conduct</h3>
-        <p class="footerContent footerBb">
-          CPOSC is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found on our About page, under
-          <a href="http://cposc.org/code-of-conduct/" target="_blank">Code of Conduct.</a>
-        </p>
-      </div>
-      <div class="footerSecond">
-        <h3 class="footerBold footerBrowser otherFoot">Connect with CPOSC</h3>
-        <a target="_blank" href ="https://www.facebook.com/CPOSC2008/"><img  class="logo mobileHide" src="images/facebook.png"></a>
-        <a target="_blank" href ="https://twitter.com/CPOSC"><img  class="logo mobileHide" src="images/twitter.png"></a>
-        <a target="_blank" href="https://www.linkedin.com/company/central-pa-open-source-conference"><img  class="logo mobileHide" src="images/in.png"></a>
-        <a target="_blank" href="https://github.com/cposc"><img  class="logo mobileHide" src="images/github.png"></a>
-        <a target="_blank" href="https://www.meetup.com/CPOSC_/"><img  class="logo mobileHide" src="images/meetup.png"></a>
-        <h3 class="footerBold footerBb logospacing">#CPOSC2017</h3>
-      </div>
-    </footer>
-
-    <script type="text/javascript" src="jquery-3.2.1.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zLxrYkjNRcf7Im3kWe_oX2psyt29hgo&callback=initMap"
-    type="text/javascript"></script>
-    <script type="text/javascript" src="sticky-sidebar.js"></script>
-    <script type="text/javascript" src="file.js"></script>
-  </body>
-  </html>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zLxrYkjNRcf7Im3kWe_oX2psyt29hgo&callback=initMap"
+  type="text/javascript"></script>
+  <script type="text/javascript" src="file.js"></script>
+</body>
+</html>

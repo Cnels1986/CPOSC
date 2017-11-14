@@ -4,8 +4,6 @@
   font-weight: bold;
   background-color: transparent;;
   border: none;
-  // display: block;
-  // float:right;
   margin-right: 9%;
   padding-top: 10px;
 }
@@ -17,18 +15,8 @@
 .panel.hide{
   opacity: 0;
 }
-/*
-.panelTest{
-  transition: height 1s ease-out;
-}
 
-.panelTest.accordionHidden{
-  height: 10px;
-}
-*/
 div.panel {
-    //padding: 0 18px;
-    //background-color: white;
     width: 100%;
     max-height: 0px;
     overflow: hidden;
@@ -47,30 +35,26 @@ div.panel {
 }
 
 @media only screen and (min-width: 760px){
-.accordionSection{
-  // width: 47%;
-  margin-left: 39.5%;
-  display: inline-block;
-}
+  .accordionSection{
+    margin-left: 39.5%;
+    display: inline-block;
+  }
 
-.accordionSection h3, .accordionSection p{
-  width:90%;
-}
+  .accordionSection h3, .accordionSection p{
+    width:90%;
+  }
 
-.accordionSpacing{
-  padding-bottom: 10px;
-}
+  .accordionSpacing{
+    padding-bottom: 10px;
+  }
 
-.accordionSection .goldenText{
-  padding-left: 4%;
-}
+  .accordionSection .goldenText{
+    padding-left: 4%;
+  }
 
-.accordionArrow{
-  // padding-top: 35px;
-  // width: 10%;
-  padding-right: $mobile;
-  float: right;
-  display: inline;
-}
-
+  .accordionArrow{
+    padding-right: $mobile;
+    float: right;
+    display: inline;
+  }
 }

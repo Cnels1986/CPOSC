@@ -30,6 +30,7 @@ function address3(){
   mapTest();
 }
 
+// https://developers.google.com/maps/documentation/javascript/
 // redraws map api with the given address
 function mapTest(){
   var map = new google.maps.Map(document.getElementById('map'), {

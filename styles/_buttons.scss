@@ -15,6 +15,7 @@
 
 .counter p{
   padding: 8px;
+
   color: $off_white;
   text-align: center;
   font-family: $mont;
@@ -88,7 +89,6 @@
 
 .aboutButton{
   border: none;
-  //needs fixed, float right was giving me issues
   margin: 30px $mobile 60px 41%;
   display: block;
   width: 50%;
@@ -105,6 +105,7 @@
   font-size: 18px;
 }
 
+
 @media only screen and (min-width: 760px){
   .counter{
     height: 140px;
@@ -112,7 +113,6 @@
   }
 
   .counter p{
-    // padding: 5% 50px 10px 50%;
     font-size: 24px;
     font-weight: bold;
     color: $off_white;
@@ -135,7 +135,6 @@
   }
 
   .homeButton, .buyTix{
-    // position: fixed;
     padding-left: $mobile;
     bottom: 0;
     left: 0;
@@ -147,7 +146,6 @@
 
   .buyTix{
     padding-top: 70px;
-
   }
 
   .goldButton{
@@ -180,12 +178,10 @@
   .specialButton{
     width: 280px;
     height: 60px;
-    background-color: $yellowish;
-
-    // display: block;
     margin: 0px 0px 43px 106%;
     border: none;
-    // float: right;
+
+    background-color: $yellowish;
   }
   .specialButton a{
     padding: 15px;
@@ -212,19 +208,6 @@
     padding-left: 10.5%;
   }
 
-
-  .buttonContentSpeakers{
-    float: right;
-    width: 100%;
-    background-color: white;
-  }
-  .buttonContentSpeakers h3, .buttonContentSpeakers p, .buttonContentSpeakers h5{
-    width: 65%;
-    padding-right: 10%;
-    float: right;
-    padding-right: 10%;
-  }
-
   .stickyTest{
     position: fixed;
     margin: 20px 0px;
@@ -239,5 +222,12 @@
 
   .fixButton{
     width: 40%;
+  }
+}
+
+// this media query removes the left padding of the sider bar/sticky button, so it no longer overlaps the text before it switches to the mobile version
+@media only screen and (max-width: 840px) and (min-width: 760px){
+  .buyTix, .homeButton{
+    padding-left: 0%;
   }
 }

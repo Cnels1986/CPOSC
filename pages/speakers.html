@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>Central Pennsylvania Open Source Confrence - Speakers and Sessions</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,500,700,800" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Central Pennsylvania Open Source Confrence - Speakers and Sessions</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,500,700,800" rel="stylesheet">
+</head>
 
-  <body class="container">
+<body class="container">
 
-    <div class="hero">
-      <header class="headerNav">
-        <a href="../index.html" class="headerText">Central Pennsylvania Open Source Conference</a>
+  <div class="hero">
+    <header class="headerNav">
+      <a href="../index.html" class="headerText">Central Pennsylvania Open Source Conference</a>
+      <!-- burger bar icon -->
+      <button class="hamburger">&#9776;</button>
+    </header>
 
-        <button class="hamburger">&#9776;</button>
-      </header>
 
-      <nav class="navBar menu isHidden">
-        <ul class="navList">
-          <li>
-            <a href="about.html" class="navLink">ABOUT</a>
-          </li>
-          <li>
-            <a href="speakers.html" class="navLink active">SESSIONS</a>
-          </li>
-          <li>
-            <a href="sponsor.html" class="navLink">BECOME A SPONSOR</a>
-          </li>
-          <li>
-            <a href="tickets.html" class="navLink">TICKETS</a>
-          </li>
-        </ul>
-      </nav>
+    <!-- nav bar, will display as burger bar in mobile or display inline for browser -->
+    <nav class="navBar menu isHidden">
+      <ul class="navList">
+        <li>
+          <a href="about.html" class="navLink">ABOUT</a>
+        </li>
+        <li>
+          <a href="speakers.html" class="navLink active">SESSIONS</a>
+        </li>
+        <li>
+          <a href="sponsor.html" class="navLink">BECOME A SPONSOR</a>
+        </li>
+        <li>
+          <a href="tickets.html" class="navLink">TICKETS</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="whitebar"></div>
+    <div class="whitebar"></div>
 
-      <!-- Main text over the hero -->
-      <div>
-          <h1 class="heroText notHome">Speakers &amp; Sessions</h1>
-      </div>
-
-      <div class="whitebar"></div>
+    <!-- Main text over the hero -->
+    <div>
+      <h1 class="heroText notHome">Speakers &amp; Sessions</h1>
     </div>
 
-    <div id="main-content" class="main">
-      <div class="buyTix sidebar" id="sidebar">
-        <div class="ticketButton sidebar__inner">
-          <p>2017 TICKETS ARE NOW AVAILABLE:</p>
-            <a href="tickets.html" class="buyTickets">
-                <h3>BUY TICKETS</h3>
-            </a>
+    <div class="whitebar"></div>
+  </div>
 
-        </div>
+
+
+  <div id="main-content" class="main">
+    <!-- side bar that contains a button that will become sticky as window scrolls, responsive with in mobile -->
+    <div class="buyTix sidebar" id="sidebar">
+      <div class="ticketButton sidebar__inner">
+        <p>2017 TICKETS ARE NOW AVAILABLE:</p>
+        <a href="tickets.html" class="buyTickets">
+          <h3>BUY TICKETS</h3>
+        </a>
       </div>
+    </div>
 
-      <div class="content" id="content">
-        <div class="accordionBG ">
+
+
+    <!-- start of content -->
+    <div class="content" id="content">
+      <div class="accordionBG ">
         <section class="sessPad specialContent ">
           <h5 class="scheduleChange">Please note this schedule is subject to minor changes</h5>
           <h3 class="sectionHeaderTime">Registration/Breakfast</h3>
@@ -69,239 +76,243 @@
         </section>
       </div>
 
-        <div class="accordionBG bgColor">
-          <div class="accordionSection">
-            <section class=" sessPad browserContent accordionSpacing">
-              <h3 class="goldenText inline">First Session</h3>
-              <button class="accordion accordionArrow">&#709;</button>
-              <div class="panel">
-                <p class="sectionContentTime sessCon ">9:20AM - 9:50AM</p>
+      <div class="accordionBG bgColor">
+        <div class="accordionSection">
+          <section class=" sessPad browserContent accordionSpacing">
+            <h3 class="goldenText inline">First Session</h3>
+            <button class="accordion accordionArrow">&#709;</button>
+            <!-- panel class allows for the accordion javascript to work, will either hide content or expand section -->
+            <div class="panel">
+              <p class="sectionContentTime sessCon ">9:20AM - 9:50AM</p>
 
-                <h3 class="sectionHeaderTime">OMG How do I even Start an Open Source Project?</h3>
-                <p class="sectionContent sessCon ">Don Schenck</p>
-                <p class="sectionContent sessCon ">Ware Center</p>
+              <h3 class="sectionHeaderTime">OMG How do I even Start an Open Source Project?</h3>
+              <p class="sectionContent sessCon ">Don Schenck</p>
+              <p class="sectionContent sessCon ">Ware Center</p>
 
-                <h3 class="sectionHeaderTime">The Reality of Desktop 3D Printing</h3>
-                <p class="sectionContent  sessCon">Matthew Gorton</p>
-                <p class="sectionContent sessCon ">Ware Center</p>
+              <h3 class="sectionHeaderTime">The Reality of Desktop 3D Printing</h3>
+              <p class="sectionContent  sessCon">Matthew Gorton</p>
+              <p class="sectionContent sessCon ">Ware Center</p>
 
-                <h3 class="sectionHeaderTime">NXDomain is Where it’s At</h3>
-                <p class="sectionContent sessCon ">Thomas Delrue</p>
-                <p class="sectionContent sessCon ">Ware Center</p>
-              </div>
-            </section>
-          </div>
+              <h3 class="sectionHeaderTime">NXDomain is Where it’s At</h3>
+              <p class="sectionContent sessCon ">Thomas Delrue</p>
+              <p class="sectionContent sessCon ">Ware Center</p>
+            </div>
+          </section>
         </div>
-
-
-        <div class="accordionBG">
-          <div class="accordionSection">
-            <section class="sessPad browserContent accordionSpacing">
-              <h3 class="goldenText">Second Session</h3>
-              <button class="accordion accordionArrow">&#709;</button>
-              <div class="panel">
-                <p class="sectionContentTime  sessCon">10:00AM - 10:30AM</p>
-
-                <h3 class="sectionHeaderTime">Kubernetes 101</h3>
-                <p class="sectionContent sessCon ">Matt Rogish</p>
-                <p class="sectionContent sessCon ">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Real-Time Facial Recognition with Keras and Tensorflow</h3>
-                <p class="sectionContent sessCon ">Rich Everts</p>
-                <p class="sectionContent sessCon ">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Software Defined Radio: Surfing the Radio Waves Around You</h3>
-                <p class="sectionContent sessCon ">Tom Swartz</p>
-                <p class="sectionContent sessCon ">Ware Center</p>
-              </div>
-            </section>
-          </div>
-        </div>
-
-
-        <div class="accordionBG bgColor">
-          <div class="accordionSection">
-            <section class="sessPad browserContent accordionSpacing">
-              <h3 class="goldenText">Third Session</h3>
-              <button class="accordion accordionArrow">&#709;</button>
-              <div class="panel">
-                <p class="sectionContentTime  sessCon">10:40AM - 11:10AM</p>
-
-                <h3 class="sectionHeaderTime">Kubernetes: a Deep Dive</h3>
-                <p class="sectionContent sessCon ">Mike Newswanger</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Linux Laptops via the Public Library</h3>
-                <p class="sectionContent sessCon">Phil Shapiro</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Why Developers Have it So Good in Central PA (And the Best is Yet to Come)</h3>
-                <p class="sectionContent sessCon">Scott Woods</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-              </div>
-            </section>
-          </div>
-        </div>
-
-
-        <div class="sessPad browserContent">
-          <p class="sectionContentTime sessCon sessCon">11:15AM - 12:15PM</p>
-          <h3 class="sectionHeaderTime sessHead">Lightning Talks</h3>
-          <p class="sectionContent sessCon">Auditorium</p>
-        </div>
-
-
-        <div class="accordionBG bgColor">
-          <div class="accordionSection">
-            <section class="sessPad browserContent accordionSpacing">
-              <h3 class="goldenText">Fourth Session</h3>
-              <button class="accordion accordionArrow">&#709;</button>
-              <div class="panel">
-                <p class="sectionContentTime sessCon sessCon">12:25PM - 12:55PM</p>
-
-                <h3 class="sectionHeaderTime">Open Mobility: Valhalla and Opentraffic</h3>
-                <p class="sectionContent sessCon">David Nesbitt</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Vault: a Tool for Managing Secrets</h3>
-                <p class="sectionContent sessCon">Jason O’Donnell</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Adventures of Open Source 3D Printing and Learning Disabilities</h3>
-                <p class="sectionContent sessCon">Michelle Styer</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-              </div>
-            </section>
-          </div>
-        </div>
-
-
-        <div class="accordionBG">
-          <div class="accordionSection">
-            <section class="sessPad browserContent accordionSpacing">
-              <h3 class="goldenText">Fifth Session</h3>
-              <button class="accordion accordionArrow">&#709;</button>
-              <div class="panel">
-                <p class="sectionContentTime sessCon">1:05PM - 1:35PM</p>
-
-                <h3 class="sectionHeaderTime">Introduction to Blockchain</h3>
-                <p class="sectionContent sessCon">James Tramel</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Securing Your Web Applications</h3>
-                <p class="sectionContent sessCon">Nate Good</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">First Person Racing Drones as a Sport</h3>
-                <p class="sectionContent sessCon">Nathaniel Evry</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-              </div>
-            </section>
-          </div>
-        </div>
-
-
-        <div class="accordionBG bgColor">
-          <div class="accordionSection">
-            <section class="sessPad browserContent accordionSpacing">
-              <h3 class="goldenText">Sixth Session</h3>
-              <button class="accordion accordionArrow">&#709;</button>
-              <div class="panel">
-                <p class="sectionContentTime sessCon sessCon">1:45PM - 2:15PM</p>
-
-                <h3 class="sectionHeaderTime">Open Source Home Automation</h3>
-                <p class="sectionContent sessCon">Michael Grucz</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Future-Proofing Your DataCenter: Leveraging the Power of ManageIQ/Cloudforms</h3>
-                <p class="sectionContent sessCon">Russell Pavlicek</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Building for Scale and Performance with React &amp; Redux</h3>
-                <p class="sectionContent sessCon">Sarah Mogin</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-              </div>
-            </section>
-          </div>
-        </div>
-
-
-        <div class="accordionBG">
-          <div class="accordionSection">
-            <section class="sessPad browserContent accordionSpacing">
-              <h3 class="goldenText">Seventh Session</h3>
-              <button class="accordion accordionArrow">&#709;</button>
-              <div class="panel">
-                <p class="sectionContentTime sessCon sessCon">2:45PM - 3:15PM</p>
-
-                <h3 class="sectionHeaderTime">In Favor of Sharing Knowledge</h3>
-                <p class="sectionContent sessCon">Bri Piccari</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Ditching REST for GRPC</h3>
-                <p class="sectionContent sessCon">Steve High</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-
-                <h3 class="sectionHeaderTime">Make Audio Visual Magic with MIDI</h3>
-                <p class="sectionContent sessCon">Tim Freund</p>
-                <p class="sectionContent sessCon">Ware Center</p>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <section class="bgColor sessPad browserContent">
-          <p class="sectionContentTime sessCon">3:25PM - 4:40PM</p>
-          <h3 class="sectionHeaderTime sessHead">Closing Keynote</h3>
-          <p class="sectionContent sessCon">Auditorium</p>
-        </section>
-
-        <section class="sessPad browserContent">
-          <p class="sectionContent sessCon">4:40PM - 5:00PM</p>
-          <h3 class="sectionHeaderTime sessHead">Prize Drawings &amp; a Fond Farewell</h3>
-          <p class="sectionContent sessCon">Auditorium</p>
-        </section>
-
-        <section class="bgColor sessPad browserContent">
-          <p class="sectionContentTime sessCon">5:00PM - ?</p>
-          <h3 class="sectionHeaderTime sessHead">CPSOC Afterparty</h3>
-          <p class="sectionContent sessCon">Tellus360</p>
-        </section>
       </div>
-      <div id="sideBarStop"></div>
+
+
+      <div class="accordionBG">
+        <div class="accordionSection">
+          <section class="sessPad browserContent accordionSpacing">
+            <h3 class="goldenText">Second Session</h3>
+            <button class="accordion accordionArrow">&#709;</button>
+            <div class="panel">
+              <p class="sectionContentTime  sessCon">10:00AM - 10:30AM</p>
+
+              <h3 class="sectionHeaderTime">Kubernetes 101</h3>
+              <p class="sectionContent sessCon ">Matt Rogish</p>
+              <p class="sectionContent sessCon ">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Real-Time Facial Recognition with Keras and Tensorflow</h3>
+              <p class="sectionContent sessCon ">Rich Everts</p>
+              <p class="sectionContent sessCon ">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Software Defined Radio: Surfing the Radio Waves Around You</h3>
+              <p class="sectionContent sessCon ">Tom Swartz</p>
+              <p class="sectionContent sessCon ">Ware Center</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="accordionBG bgColor">
+        <div class="accordionSection">
+          <section class="sessPad browserContent accordionSpacing">
+            <h3 class="goldenText">Third Session</h3>
+            <button class="accordion accordionArrow">&#709;</button>
+            <div class="panel">
+              <p class="sectionContentTime  sessCon">10:40AM - 11:10AM</p>
+
+              <h3 class="sectionHeaderTime">Kubernetes: a Deep Dive</h3>
+              <p class="sectionContent sessCon ">Mike Newswanger</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Linux Laptops via the Public Library</h3>
+              <p class="sectionContent sessCon">Phil Shapiro</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Why Developers Have it So Good in Central PA (And the Best is Yet to Come)</h3>
+              <p class="sectionContent sessCon">Scott Woods</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <!-- not an accordion section -->
+      <div class="sessPad browserContent">
+        <p class="sectionContentTime sessCon sessCon">11:15AM - 12:15PM</p>
+        <h3 class="sectionHeaderTime sessHead">Lightning Talks</h3>
+        <p class="sectionContent sessCon">Auditorium</p>
+      </div>
+
+
+      <div class="accordionBG bgColor">
+        <div class="accordionSection">
+          <section class="sessPad browserContent accordionSpacing">
+            <h3 class="goldenText">Fourth Session</h3>
+            <button class="accordion accordionArrow">&#709;</button>
+            <div class="panel">
+              <p class="sectionContentTime sessCon sessCon">12:25PM - 12:55PM</p>
+
+              <h3 class="sectionHeaderTime">Open Mobility: Valhalla and Opentraffic</h3>
+              <p class="sectionContent sessCon">David Nesbitt</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Vault: a Tool for Managing Secrets</h3>
+              <p class="sectionContent sessCon">Jason O’Donnell</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Adventures of Open Source 3D Printing and Learning Disabilities</h3>
+              <p class="sectionContent sessCon">Michelle Styer</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="accordionBG">
+        <div class="accordionSection">
+          <section class="sessPad browserContent accordionSpacing">
+            <h3 class="goldenText">Fifth Session</h3>
+            <button class="accordion accordionArrow">&#709;</button>
+            <div class="panel">
+              <p class="sectionContentTime sessCon">1:05PM - 1:35PM</p>
+
+              <h3 class="sectionHeaderTime">Introduction to Blockchain</h3>
+              <p class="sectionContent sessCon">James Tramel</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Securing Your Web Applications</h3>
+              <p class="sectionContent sessCon">Nate Good</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">First Person Racing Drones as a Sport</h3>
+              <p class="sectionContent sessCon">Nathaniel Evry</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="accordionBG bgColor">
+        <div class="accordionSection">
+          <section class="sessPad browserContent accordionSpacing">
+            <h3 class="goldenText">Sixth Session</h3>
+            <button class="accordion accordionArrow">&#709;</button>
+            <div class="panel">
+              <p class="sectionContentTime sessCon sessCon">1:45PM - 2:15PM</p>
+
+              <h3 class="sectionHeaderTime">Open Source Home Automation</h3>
+              <p class="sectionContent sessCon">Michael Grucz</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Future-Proofing Your DataCenter: Leveraging the Power of ManageIQ/Cloudforms</h3>
+              <p class="sectionContent sessCon">Russell Pavlicek</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Building for Scale and Performance with React &amp; Redux</h3>
+              <p class="sectionContent sessCon">Sarah Mogin</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="accordionBG">
+        <div class="accordionSection">
+          <section class="sessPad browserContent accordionSpacing">
+            <h3 class="goldenText">Seventh Session</h3>
+            <button class="accordion accordionArrow">&#709;</button>
+            <div class="panel">
+              <p class="sectionContentTime sessCon sessCon">2:45PM - 3:15PM</p>
+
+              <h3 class="sectionHeaderTime">In Favor of Sharing Knowledge</h3>
+              <p class="sectionContent sessCon">Bri Piccari</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Ditching REST for GRPC</h3>
+              <p class="sectionContent sessCon">Steve High</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+
+              <h3 class="sectionHeaderTime">Make Audio Visual Magic with MIDI</h3>
+              <p class="sectionContent sessCon">Tim Freund</p>
+              <p class="sectionContent sessCon">Ware Center</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="bgColor sessPad browserContent">
+        <p class="sectionContentTime sessCon">3:25PM - 4:40PM</p>
+        <h3 class="sectionHeaderTime sessHead">Closing Keynote</h3>
+        <p class="sectionContent sessCon">Auditorium</p>
+      </section>
+
+      <section class="sessPad browserContent">
+        <p class="sectionContent sessCon">4:40PM - 5:00PM</p>
+        <h3 class="sectionHeaderTime sessHead">Prize Drawings &amp; a Fond Farewell</h3>
+        <p class="sectionContent sessCon">Auditorium</p>
+      </section>
+
+      <section class="bgColor sessPad browserContent">
+        <p class="sectionContentTime sessCon">5:00PM - ?</p>
+        <h3 class="sectionHeaderTime sessHead">CPSOC Afterparty</h3>
+        <p class="sectionContent sessCon">Tellus360</p>
+      </section>
+    </div>
+    <div id="sideBarStop"></div>
   </div>
 
 
-    <section class="mapSection">
-      <div class="mapText">
-        <h4 class="mapHeader">CONFERENCE LOCATIONS</h4>
+  <!-- map section that uses the google maps API for javascript, buttons allow map to be redrawn at new address -->
+  <section class="mapSection">
+    <div class="mapText">
+      <h4 class="mapHeader">CONFERENCE LOCATIONS</h4>
 
-        <div>
-          <button onclick="address1()" class="localHeader">The Ware Center</button>
-          <p class="mapContent location">at Millersville University</p>
-          <p class="mapContent">42 N. Prince Street,</p>
-          <p class="mapContent">Lancaster, PA 17603</p>
-        </div>
-
-        <div>
-          <button onclick="address2()" class="localHeader">Prince St. Parking Garage</button>
-          <p class="mapContent">111 N. Prince Street,</p>
-          <p class="mapContent">Lancaster, PA 17603</p>
-        </div>
-
-        <div>
-          <button onclick="address3()" class="localHeader">Tellus360</button>
-          <p class="mapContent">24 E. King Street,</p>
-          <p class="mapContent">Lancaster, PA 17602</p>
-        </div>
+      <div>
+        <button onclick="address1()" class="localHeader">The Ware Center</button>
+        <p class="mapContent location">at Millersville University</p>
+        <p class="mapContent">42 N. Prince Street,</p>
+        <p class="mapContent">Lancaster, PA 17603</p>
       </div>
 
+      <div>
+        <button onclick="address2()" class="localHeader">Prince St. Parking Garage</button>
+        <p class="mapContent">111 N. Prince Street,</p>
+        <p class="mapContent">Lancaster, PA 17603</p>
+      </div>
 
-      <div class="mapContainer" id="map"></div>
-    </section>
+      <div>
+        <button onclick="address3()" class="localHeader">Tellus360</button>
+        <p class="mapContent">24 E. King Street,</p>
+        <p class="mapContent">Lancaster, PA 17602</p>
+      </div>
+    </div>
 
-    <footer class="footerBG">
-      <div class="footerFirst">
+    <!-- actual map api container -->
+    <div class="mapContainer" id="map"></div>
+  </section>
+
+  <!-- footer section, same for all pages -->
+  <footer class="footerBG">
+    <div class="footerFirst">
       <h3 class="footerBold footerBrowser">Code of Conduct</h3>
       <p class="footerContent footerBb">
         CPOSC is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found on our About page, under
@@ -312,15 +323,14 @@
       <h3 class="footerBold footerBrowser">Connect with CPOSC</h3>
       <h3 class="footerBold footerBb">#CPOSC2017</h3>
     </div>
-    </footer>
+  </footer>
 
 
-    <div id="hundreds" class="mobileHide"></div>
-    <div id="tens" class="mobileHide"></div>
-    <div id="ones" class="mobileHide"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zLxrYkjNRcf7Im3kWe_oX2psyt29hgo&callback=initMap"
-            type="text/javascript"></script>
-            <script type="text/javascript" src="../sticky-sidebar.js"></script>
-    <script src="../file.js"></script>
-  </body>
+  <!-- <div id="hundreds" class="mobileHide"></div> -->
+  <!-- <div id="tens" class="mobileHide"></div> -->
+  <!-- <div id="ones" class="mobileHide"></div> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zLxrYkjNRcf7Im3kWe_oX2psyt29hgo&callback=initMap"
+  type="text/javascript"></script>
+  <script src="../file.js"></script>
+</body>
 </html>
