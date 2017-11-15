@@ -155,13 +155,13 @@ window.addEventListener('scroll', function(ev) {
   var someDiv = document.getElementById('sidebar');
 
 // depending on the distance of the scroll, classes will added or removed to alter the side menu
-  if(window.scrollY > SBtop)
+  if(window.pageYOffset > SBtop)
   addStick(someDiv);
-  if(window.scrollY >= stop)
+  if(window.pageYOffset >= stop)
   byeStick(someDiv);
-  if(window.scrollY < stop && window.scrollY > SBtop)
+  if(window.pageYOffset < stop && window.pageYOffset > SBtop)
   backStick(someDiv);
-  if(window.scrollY < SBtop)
+  if(window.pageYOffset < SBtop)
   removeStick(someDiv);
 });
 
